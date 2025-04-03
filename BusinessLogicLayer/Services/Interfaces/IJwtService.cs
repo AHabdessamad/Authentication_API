@@ -9,5 +9,6 @@ namespace Service.Services.Interfaces
     public interface IJwtService
     {
         public string GenerateToken(int userId);
+
     }
 }

@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "WebAPI.Controllers.LoginModel",
+        "Type": "AuthenticationAPI.Models.LoginModel",
         "IsRequired": true
       }
     ],
@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "WebAPI.Controllers.RegisterModel",
+        "Type": "AuthenticationAPI.Models.RegisterModel",
         "IsRequired": true
       }
     ],

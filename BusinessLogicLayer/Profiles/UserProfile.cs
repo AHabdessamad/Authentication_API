@@ -14,6 +14,7 @@ namespace Service.Profiles
         public UserProfile()
         {
             CreateMap<User, UserDto>().ReverseMap();
+            //CreateMap<UserDto, RegisterModel>
         }
     }
 }

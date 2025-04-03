@@ -11,6 +11,7 @@ namespace Service.Services.Interfaces
     public interface IUserService
     {
         public Task<User> GetUserByUsernameAsync(string username);
-        public Task<UserDto> RegisterUserAsync(User user);
+        public Task<UserDto> RegisterUserAsync(UserDto user);
+        bool VerifyPassword(User user, string password);
     }
 }

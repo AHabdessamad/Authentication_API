@@ -1,22 +1,22 @@
-﻿using DAL.Entities;
-using Microsoft.AspNetCore.Identity;
+﻿using AuthenticationAPI.Models;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Service.Dtos;
 using Service.Services;
+using Service.Services.Interfaces;
 
 namespace WebAPI.Controllers
 {
-    public record RegisterModel(string Username, string Email, string Password);
-    public record LoginModel(string Username, string Password);
 
     [ApiController]
     [Route("/api/Auth")]
     public class AuthController : ControllerBase
     {
-        private readonly UserService _userService;
-        private readonly JwtService _jwtService;
+        private readonly IUserService _userService;
+        private readonly IJwtService _jwtService;
+        private readonly IMapper _mapper;
 
-        public AuthController(UserService userService, JwtService jwtService)
+        public AuthController(IUserService userService, IJwtService jwtService)
         {
             _userService = userService;
             _jwtService = jwtService;
@@ -29,14 +29,17 @@ namespace WebAPI.Controllers
             {
                 return BadRequest(ModelState);
             }
-            var user = new User
+
+            Console.WriteLine(model);
+
+            //var _user = _mapper.Map<UserDto>(model);
+            var _user = new UserDto
             {
                 Username = model.Username,
                 Email = model.Email,
-                PasswordHash = new PasswordHasher<User>().HashPassword(null, model.Password)
             };
 
-            return _userService.RegisterUserAsync(user) != null
+            return _userService.RegisterUserAsync(_user) != null
                 ? Ok(new { message = "registered successed" })
                 : BadRequest(new { message = "registration failed" });
         }
@@ -48,10 +51,12 @@ namespace WebAPI.Controllers
             {
                 return BadRequest(ModelState);
             }
+
             var _user = await _userService.GetUserByUsernameAsync(model.Username);
 
-            if (_user == null || new PasswordHasher<User>().VerifyHashedPassword(_user, _user.PasswordHash, model.Password) != PasswordVerificationResult.Failed)
+            if (_user == null || !_userService.VerifyPassword(_user, model.Password))
                 return BadRequest("Worng Password");
+            
 
             var token = _jwtService.GenerateToken(_user.Id);
 
