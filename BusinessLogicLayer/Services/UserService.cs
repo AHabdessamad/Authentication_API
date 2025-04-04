@@ -5,6 +5,7 @@ using DAL.Repositories;
 using Service.Dtos;
 using Service.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
+using AuthenticationAPI.Models;
 
 namespace Service.Services
 {
@@ -15,10 +16,11 @@ namespace Service.Services
         private readonly IJwtService _jwtService;
         private readonly IMapper _mapper;
 
-        public UserService(ApplicationDbContext context, IUserRepository userRepository)
+        public UserService(ApplicationDbContext context, IUserRepository userRepository, IMapper mapper)
         {
             _context = context;
             _userRepository = userRepository;
+            _mapper = mapper;
         }
 
         public async Task<User> GetUserByUsernameAsync(string username)
@@ -26,18 +28,18 @@ namespace Service.Services
             return await _userRepository.GetUserByUsernameAsync(username);
 
         }
-        public async Task<UserDto> RegisterUserAsync(UserDto user)
+
+        public async Task<UserDto> RegisterUserAsync(RegisterModel user)
         {
-            //check if the user exist
-            var existingUser = await _userRepository.GetUserByUsernameAsync(user.Username);
-            if (existingUser != null)
-            {
-                throw new Exception("user already exists");
-            }
+            //var _user = new User { Email = user.Email, Username = user.Username, PasswordHash = user.Password };
+            var _user = _mapper.Map<User>(user);
 
-            var _user = await _userRepository.RegisterUserAsync(_mapper.Map<User>(user));
+            _user.PasswordHash = new PasswordHasher<User>().HashPassword(_user, _user.PasswordHash);
 
-            return _mapper.Map<UserDto>(_user);
+            var __user = await _userRepository.RegisterUserAsync(_user);
+
+            return _mapper.Map<UserDto>(__user);
+
         }
 
 

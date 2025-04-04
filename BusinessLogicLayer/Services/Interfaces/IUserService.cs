@@ -1,4 +1,5 @@
-﻿using DAL.Entities;
+﻿using AuthenticationAPI.Models;
+using DAL.Entities;
 using Service.Dtos;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace Service.Services.Interfaces
     public interface IUserService
     {
         public Task<User> GetUserByUsernameAsync(string username);
-        public Task<UserDto> RegisterUserAsync(UserDto user);
+        public Task<UserDto> RegisterUserAsync(RegisterModel user);
         bool VerifyPassword(User user, string password);
     }
 }

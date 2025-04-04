@@ -1,11 +1,7 @@
-﻿using AutoMapper;
+﻿using AuthenticationAPI.Models;
+using AutoMapper;
 using DAL.Entities;
 using Service.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Service.Profiles
 {
@@ -14,7 +10,8 @@ namespace Service.Profiles
         public UserProfile()
         {
             CreateMap<User, UserDto>().ReverseMap();
-            //CreateMap<UserDto, RegisterModel>
+            CreateMap<User, RegisterModel>()
+                .ForMember(dest => dest.Password, opt => opt.MapFrom(src => src.PasswordHash)).ReverseMap();
         }
     }
 }

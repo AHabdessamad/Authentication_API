@@ -1,9 +1,11 @@
 ﻿using AuthenticationAPI.Models;
 using AutoMapper;
+using DAL.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Service.Dtos;
 using Service.Services;
 using Service.Services.Interfaces;
+using Service.Profiles;
 
 namespace WebAPI.Controllers
 {
@@ -30,16 +32,11 @@ namespace WebAPI.Controllers
                 return BadRequest(ModelState);
             }
 
-            Console.WriteLine(model);
+            var _user = await _userService.GetUserByUsernameAsync(model.Username);
 
-            //var _user = _mapper.Map<UserDto>(model);
-            var _user = new UserDto
-            {
-                Username = model.Username,
-                Email = model.Email,
-            };
+            if (_user != null) return BadRequest(new { message ="User already exist" });
 
-            return _userService.RegisterUserAsync(_user) != null
+            return _userService.RegisterUserAsync(model) != null
                 ? Ok(new { message = "registered successed" })
                 : BadRequest(new { message = "registration failed" });
         }
@@ -55,7 +52,7 @@ namespace WebAPI.Controllers
             var _user = await _userService.GetUserByUsernameAsync(model.Username);
 
             if (_user == null || !_userService.VerifyPassword(_user, model.Password))
-                return BadRequest("Worng Password");
+                return BadRequest(new { message = "Worng password Or User not exist" });
             
 
             var token = _jwtService.GenerateToken(_user.Id);
