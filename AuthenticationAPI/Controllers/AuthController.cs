@@ -17,11 +17,13 @@ namespace WebAPI.Controllers
         private readonly IUserService _userService;
         private readonly IJwtService _jwtService;
         private readonly IMapper _mapper;
+        private readonly ILogger _logger;
 
-        public AuthController(IUserService userService, IJwtService jwtService)
+        public AuthController(IUserService userService, IJwtService jwtService, ILogger logger  )
         {
             _userService = userService;
             _jwtService = jwtService;
+            _logger = logger;
         }
 
         [HttpPost("register")]
@@ -35,6 +37,8 @@ namespace WebAPI.Controllers
             var _user = await _userService.GetUserByUsernameAsync(model.Username);
 
             if (_user != null) return BadRequest(new { message ="User already exist" });
+
+            _logger.LogInformation("Registering to the application...");
 
             return _userService.RegisterUserAsync(model) != null
                 ? Ok(new { message = "registered successed" })
