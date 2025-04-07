@@ -2744,9 +2744,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\BusinessLogicLayer\\Service.csproj",
-      "projectName": "Service",
-      "projectPath": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\BusinessLogicLayer\\Service.csproj",
+      "projectUniqueName": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+      "projectName": "BusinessLogicLayer",
+      "projectPath": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
       "packagesPath": "C:\\Users\\aaithamou\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\BusinessLogicLayer\\obj\\",
       "projectStyle": "PackageReference",

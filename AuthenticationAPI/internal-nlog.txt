@@ -1,0 +1,21 @@
+2025-04-07 14:50:04.8863 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Failed to create Target with unknown type-alias: 'Database' - Extension NLog.Database not included?
+   at NLog.Config.FactoryExtensions.CreateInstance[TBaseType](IFactory`1 factory, String typeAlias)
+   at NLog.Config.LoggingConfigurationParser.FactoryCreateInstance[T](String typeName, IFactory`1 factory)
+2025-04-07 14:50:04.9448 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: asyncFileWrapper
+2025-04-07 14:50:04.9448 Warn AsyncWrapper(Name=asyncFileWrapper): Exception in Initialize Exception: NLog.NLogConfigurationException: Required parameter 'WrappedTarget' on 'AsyncWrapper(Name=asyncFileWrapper)' was not specified.
+   at NLog.Internal.PropertyHelper.CheckRequiredParameters(ConfigurationItemFactory configFactory, Object o)
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2025-04-07 14:57:39.8773 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Failed to create Target with unknown type-alias: 'Database' - Extension NLog.Database not included?
+   at NLog.Config.FactoryExtensions.CreateInstance[TBaseType](IFactory`1 factory, String typeAlias)
+   at NLog.Config.LoggingConfigurationParser.FactoryCreateInstance[T](String typeName, IFactory`1 factory)
+2025-04-07 14:57:39.9317 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: asyncFileWrapper
+2025-04-07 14:57:39.9317 Warn AsyncWrapper(Name=asyncFileWrapper): Exception in Initialize Exception: NLog.NLogConfigurationException: Required parameter 'WrappedTarget' on 'AsyncWrapper(Name=asyncFileWrapper)' was not specified.
+   at NLog.Internal.PropertyHelper.CheckRequiredParameters(ConfigurationItemFactory configFactory, Object o)
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)
+2025-04-07 15:02:01.9097 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Failed to create Target with unknown type-alias: 'Database' - Extension NLog.Database not included?
+   at NLog.Config.FactoryExtensions.CreateInstance[TBaseType](IFactory`1 factory, String typeAlias)
+   at NLog.Config.LoggingConfigurationParser.FactoryCreateInstance[T](String typeName, IFactory`1 factory)
+2025-04-07 15:02:01.9661 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: asyncFileWrapper
+2025-04-07 15:02:01.9661 Warn AsyncWrapper(Name=asyncFileWrapper): Exception in Initialize Exception: NLog.NLogConfigurationException: Required parameter 'WrappedTarget' on 'AsyncWrapper(Name=asyncFileWrapper)' was not specified.
+   at NLog.Internal.PropertyHelper.CheckRequiredParameters(ConfigurationItemFactory configFactory, Object o)
+   at NLog.Targets.Target.Initialize(LoggingConfiguration configuration)

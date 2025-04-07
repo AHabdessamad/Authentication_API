@@ -1,12 +1,8 @@
+using BusinessLogicLayer;
 using DAL.Data;
-using DAL.Repositories;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using NLog.Extensions.Logging;
 using Service.Profiles;
-using Service.Services;
-using Service.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,9 +12,7 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IJwtService, JwtService>();
-builder.Services.AddScoped<IUserRepository,UserRepository>();
+builder.Services.AddServices(builder.Configuration);
 
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -30,9 +24,9 @@ builder.Services.AddLogging(logging =>
     logging.ClearProviders();
     logging.SetMinimumLevel(LogLevel.Trace);
 });
-
 builder.Services.AddSingleton(typeof(ILogger), typeof(Logger<Program>));
 builder.Services.AddSingleton<ILoggerProvider, NLogLoggerProvider>();
+
 
 
 builder.Services.AddEndpointsApiExplorer();

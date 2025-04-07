@@ -1809,6 +1809,23 @@
           }
         }
       },
+      "BusinessLogicLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "AutoMapper": "14.0.0",
+          "DataAccessLayer": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
+          "Microsoft.Extensions.Identity.Core": "9.0.3",
+          "System.IdentityModel.Tokens.Jwt": "8.7.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLogicLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogicLayer.dll": {}
+        }
+      },
       "DataAccessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1823,23 +1840,6 @@
         },
         "runtime": {
           "bin/placeholder/DataAccessLayer.dll": {}
-        }
-      },
-      "Service/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "AutoMapper": "14.0.0",
-          "DataAccessLayer": "1.0.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.3",
-          "Microsoft.Extensions.Identity.Core": "9.0.3",
-          "System.IdentityModel.Tokens.Jwt": "8.7.0"
-        },
-        "compile": {
-          "bin/placeholder/Service.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Service.dll": {}
         }
       }
     }
@@ -5191,27 +5191,27 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "BusinessLogicLayer/1.0.0": {
+      "type": "project",
+      "path": "../BusinessLogicLayer/BusinessLogicLayer.csproj",
+      "msbuildProject": "../BusinessLogicLayer/BusinessLogicLayer.csproj"
+    },
     "DataAccessLayer/1.0.0": {
       "type": "project",
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
-    },
-    "Service/1.0.0": {
-      "type": "project",
-      "path": "../BusinessLogicLayer/Service.csproj",
-      "msbuildProject": "../BusinessLogicLayer/Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "AutoMapper >= 14.0.0",
+      "BusinessLogicLayer >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 9.0.3",
       "Microsoft.AspNetCore.OpenApi >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
       "NLog >= 5.4.0",
       "NLog.Extensions.Logging >= 5.4.0",
-      "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 8.1.0",
       "System.IdentityModel.Tokens.Jwt >= 8.7.0"
     ]
@@ -5248,8 +5248,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\BusinessLogicLayer\\Service.csproj": {
-              "projectPath": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\BusinessLogicLayer\\Service.csproj"
+            "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
+              "projectPath": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\BusinessLogicLayer\\BusinessLogicLayer.csproj"
             }
           }
         }

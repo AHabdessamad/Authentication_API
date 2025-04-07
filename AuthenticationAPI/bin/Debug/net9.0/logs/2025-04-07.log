@@ -1,0 +1,43 @@
+2025-04-07 14:40:23.8907 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-07 14:40:23.9576 INFO Hosting environment: Development 
+2025-04-07 14:40:23.9576 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-07 14:40:57.6560 INFO Executed DbCommand (73ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-07 14:40:57.6793 INFO Registering to the application... 
+2025-04-07 14:40:57.9406 INFO Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [PasswordHash], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2); 
+2025-04-07 14:41:47.1640 INFO Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-07 14:42:17.9440 INFO Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-07 14:42:18.1201 INFO Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-07 14:50:05.4599 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-07 14:50:05.5011 INFO Hosting environment: Development 
+2025-04-07 14:50:05.5011 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-07 14:50:27.1498 INFO Executed DbCommand (50ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-07 14:50:27.3909 INFO Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-07 14:57:40.3885 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-07 14:57:40.4233 INFO Hosting environment: Development 
+2025-04-07 14:57:40.4248 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-07 15:02:02.3954 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-07 15:02:02.4399 INFO Hosting environment: Development 
+2025-04-07 15:02:02.4399 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
