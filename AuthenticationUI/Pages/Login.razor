@@ -1,44 +1,60 @@
 ﻿@page "/login"
 @inject HttpClient Http
-@inject CustomAuthService customAuthService
+@* @inject CustomAuthService customAuthService *@
 @* @inject CustomHttpHandler customHttpHandler *@
+@inject AuthenticationStateProvider authProvider
 @layout EmptyLayout
 @inject NavigationManager navigationManager
 
-<div class="row mt-5">
-    <div class="col-lg-4 offset-lg-4 pt-4 pb-4 border">
-        <div class="mb-3 text-center">
-            <h3>LOGIN</h3>
-        </div>
-        <div class="mb-3">
-            <label>User Name</label>
-            <input  class="form-control" id="username" @bind="user.Username" placeholder="User Name" />
-        </div>
-        <div class="mb-3">
-            <label>Password</label>
+<EditForm Model="@user" OnValidSubmit="HandleLogin">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="row mt-5">
+        <div class="col-lg-4 offset-lg-4 pt-4 pb-4 border">
+            <div class="mb-3 text-center">
+                <h3>LOGIN</h3>
+                @if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    <div class="alert alert-danger mt-3" role="alert">
+                        @errorMessage
+                    </div>
+                }
+            </div>
+            <div class="mb-3">
+                <label>User Name</label>
+                <input  class="form-control" id="username" @bind="user.Username" placeholder="User Name" />
+            </div>
+            <div class="mb-3">
+                <label>Password</label>
 
-            <input  type="password" id="password" @bind="user.Password" class="form-control" placeholder="Password" />
-        </div>
-        <div class="mb-3 d-grid gap-2">
-            <button @onclick="HandleLogin" class="btn btn-primary">Login</button>
+                <input  type="password" id="password" @bind="user.Password" class="form-control" placeholder="Password" />
+            </div>
+            <div class="mb-3 d-grid gap-2">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+            <a href="/register" target="_blank">Register</a>
         </div>
     </div>
-</div>
+</EditForm>
 
 @code {
-    User user = new User();
-    
+    LogingDTO user = new LogingDTO();
+    private string? errorMessage;
+
     private async void HandleLogin()
     {
         Console.WriteLine("Login page loaded");
+        var customAuthService = (CustomAuthService)authProvider;
         var result = await customAuthService.LoginAsync(user.Username, user.Password);
-        Console.WriteLine(result);
+        Console.WriteLine(result.Message);
         if (result.IsSuccess)
         {
-            Console.WriteLine(result.Message);
             navigationManager.NavigateTo("/");
         }
+        errorMessage = result.Message;
     }
+
+}
 
 
 }

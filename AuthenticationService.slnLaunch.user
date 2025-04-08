@@ -1,6 +1,6 @@
 [
   {
-    "Name": "New Profile",
+    "Name": "back-front",
     "Projects": [
       {
         "Path": "AuthenticationAPI\\AuthenticationAPI.csproj",

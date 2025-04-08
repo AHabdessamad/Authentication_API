@@ -1,11 +1,7 @@
 ﻿using AuthenticationAPI.Models;
 using AutoMapper;
-using DAL.Entities;
 using Microsoft.AspNetCore.Mvc;
-using Service.Dtos;
-using Service.Services;
 using Service.Services.Interfaces;
-using Service.Profiles;
 
 namespace WebAPI.Controllers
 {

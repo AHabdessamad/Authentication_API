@@ -1,21 +1,13 @@
 ﻿@using Microsoft.AspNetCore.Components.Authorization
 @inject NavigationManager navigationManager
 <Router AppAssembly="@typeof(App).Assembly">
-    <Found Context="routeData">
-        <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-        <NotAuthorized>
-            @code {
-                protected override void OnInitialized()
-                {
-                    // to avoid loop cycle in browser
-                    if (!navigationManager.Uri.Contains("/login"))
-                    {
-                        navigationManager.NavigateTo("/login", true);
-                    }
-                }
-            }
-        </NotAuthorized>
-        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+      <Found Context="routeData">
+        <AuthorizeRouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)">
+            <NotAuthorized>
+                <RedirectToLogin />
+            </NotAuthorized>
+        </AuthorizeRouteView>
+        <FocusOnNavigate RouteData="routeData" Selector="h1" />
     </Found>
     <NotFound>
         <PageTitle>Not found</PageTitle>

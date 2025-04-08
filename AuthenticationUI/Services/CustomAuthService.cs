@@ -47,8 +47,11 @@ namespace AuthenticationUI.Services
         public static IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
         {
             var payload = jwt.Split('.')[1];
+
             var jsonBytes = ParseBase64WithoutPadding(payload);
+
             var keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
+
             return keyValuePairs.Select(kvp => new Claim(kvp.Key, kvp.Value.ToString()));
         }
 
@@ -64,22 +67,29 @@ namespace AuthenticationUI.Services
 
         public async Task<FormResult> LoginAsync(string username, string password)
         {
-            _httpClient.BaseAddress = new Uri("https://localhost:44354/");
+            _httpClient.BaseAddress = new Uri("https://localhost:44353");
 
             try
             {
                 var res = await _httpClient.PostAsJsonAsync(
-                    "api/Auth/login",
+                    "/api/Auth/login",
                     new { 
                         username, 
                         password 
                     });
+                Console.WriteLine(res);
                 if (res.IsSuccessStatusCode)
                 {
+
                     var tokenResponse = await res.Content.ReadAsStringAsync();
-                    var tokenInfo = JsonSerializer.Deserialize<TokenInfo>(tokenResponse);
-                    await _localStorageService.SetItemAsync("accessToken", tokenInfo.AccessToken);
+                    var tokenObject = JsonSerializer.Deserialize<Dictionary<string, string>>(tokenResponse);
+
+                    var token = tokenObject["token"];
+
+                    await _localStorageService.SetItemAsync("accessToken", tokenResponse);
+
                     NotifyAuthenticationStateChanged(GetAuthenticationStateAsync());
+
                     return new FormResult(true, "Login successful");
                 }
             }
@@ -89,6 +99,27 @@ namespace AuthenticationUI.Services
             }
 
             return new FormResult(false, "Login failed");
+        }
+
+        public async Task<FormResult> RegisterAsync(RegisterDTO registerDTO)
+        {
+
+            try
+            {
+                var res = await _httpClient.PostAsJsonAsync(
+                    "https://localhost:44353/api/Auth/Register", registerDTO);
+                Console.WriteLine(res);
+                if (res.IsSuccessStatusCode)
+                {
+                    return new FormResult(true, "User Created Successfully");
+                }
+            }
+            catch (Exception ex)
+            {
+                return new FormResult(false, ex.Message);
+            }
+
+            return new FormResult(false, "Register failed");
         }
     }
 }

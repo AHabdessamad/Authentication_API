@@ -1,0 +1,14 @@
+﻿@inject IJSRuntime JS
+@inject NavigationManager Navigation
+
+@code {
+    protected async override void OnInitialized()
+    {
+        var hasToken = await JS.InvokeAsync<string>("localStorage.getItem", "accessToken");
+        if (string.IsNullOrEmpty(hasToken))
+        {
+            Navigation.NavigateTo("/login", true);
+        }
+    }
+}
+
