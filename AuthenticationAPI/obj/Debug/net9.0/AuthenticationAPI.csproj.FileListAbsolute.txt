@@ -1,3 +1,4 @@
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\nlog.config
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\appsettings.json
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\AuthenticationAPI.staticwebassets.endpoints.json
@@ -11,6 +12,8 @@ C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debu
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Azure.Identity.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Humanizer.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Build.Locator.dll
@@ -21,10 +24,12 @@ C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debu
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Data.Sqlite.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
@@ -32,6 +37,7 @@ C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debu
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
@@ -48,6 +54,9 @@ C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debu
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\NLog.dll
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\NLog.Extensions.Logging.dll
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\SQLitePCLRaw.core.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -143,7 +152,9 @@ C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debu
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\BusinessLogicLayer.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\DataAccessLayer.dll
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\BusinessLogicLayer.pdb
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\DataAccessLayer.pdb
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\obj\Debug\net9.0\AuthenticationAPI.csproj.AssemblyReference.cache
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\obj\Debug\net9.0\AuthenticationAPI.GeneratedMSBuildEditorConfig.editorconfig
@@ -170,14 +181,3 @@ C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\obj\Debu
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\obj\Debug\net9.0\AuthenticationAPI.pdb
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\obj\Debug\net9.0\AuthenticationAPI.genruntimeconfig.cache
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\obj\Debug\net9.0\ref\AuthenticationAPI.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Data.Sqlite.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\SQLitePCLRaw.core.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\nlog.config
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\NLog.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\NLog.Extensions.Logging.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\BusinessLogicLayer.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI\bin\Debug\net9.0\BusinessLogicLayer.pdb
