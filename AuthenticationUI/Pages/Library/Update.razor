@@ -1,0 +1,61 @@
+﻿@page "/book/update/{Id}"
+@inject LibraryService libraryService
+@inject NavigationManager navigationManager
+<h3>Update Book</h3>
+
+<EditForm Model="@book" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <InputText class="form-control" @bind-Value="book.Title" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">ISBN</label>
+        <InputText class="form-control" @bind-Value="book.ISBN" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Price</label>
+        <InputNumber class="form-control" @bind-Value="book.Price" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Author</label>
+        <InputText class="form-control" @bind-Value="book.Author" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Publish Date</label>
+        <InputDate class="form-control" @bind-Value="book.PublishDate" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Number of Copies</label>
+        <InputNumber class="form-control" @bind-Value="book.NbrOfCopy" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Book</button>
+</EditForm>
+
+@code {
+
+    [Parameter]
+    public string Id { get; set; }
+    Book book = new Book();
+    protected async override Task OnParametersSetAsync()
+    {
+        book = await libraryService.GetBook(int.Parse(Id));
+    }
+    private async Task HandleValidSubmit()
+    {
+        bool isSuccess= await libraryService.UpdateBook(Convert.ToInt32(Id), book);
+        if (isSuccess)
+        {
+            navigationManager.NavigateTo("/book");
+        }
+    }
+
+}

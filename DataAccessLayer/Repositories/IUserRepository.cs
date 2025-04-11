@@ -11,5 +11,8 @@ namespace DAL.Repositories
     {
         Task<User> GetUserByUsernameAsync(string username);
         Task<User> RegisterUserAsync(User user);
+
+        Task<IEnumerable<User>> GetAllUserAsync();
+        Task<IEnumerable<User>> SearchByUsername(string username);
     }
 }

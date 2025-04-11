@@ -1,0 +1,553 @@
+2025-04-10 07:27:53.1418 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 07:27:53.2520 INFO Hosting environment: Development 
+2025-04-10 07:27:53.2520 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 07:30:59.1888 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 07:30:59.2608 INFO Hosting environment: Development 
+2025-04-10 07:30:59.2608 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 07:32:05.9939 INFO Executed DbCommand (147ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 07:40:40.3904 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 07:40:40.5128 INFO Hosting environment: Development 
+2025-04-10 07:40:40.5158 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 07:41:24.1543 INFO Executed DbCommand (130ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 08:41:02.7682 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 08:41:02.8485 INFO Hosting environment: Development 
+2025-04-10 08:41:02.8485 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:04:42.5984 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:04:42.6486 INFO Hosting environment: Development 
+2025-04-10 09:04:42.6486 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:04:42.9812 ERROR An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Auth/user" for actions - WebAPI.Controllers.AuthController.GetUserByUsername (AuthenticationAPI), WebAPI.Controllers.AuthController.GetAllUsers (AuthenticationAPI), WebAPI.Controllers.AuthController.SerachByUsername (AuthenticationAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:05:30.9272 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:05:30.9682 INFO Hosting environment: Development 
+2025-04-10 09:05:30.9682 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:05:31.1897 ERROR An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Auth/user" for actions - WebAPI.Controllers.AuthController.GetUserByUsername (AuthenticationAPI), WebAPI.Controllers.AuthController.GetAllUsers (AuthenticationAPI), WebAPI.Controllers.AuthController.SerachByUsername (AuthenticationAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:05:56.2864 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:05:56.3567 INFO Hosting environment: Development 
+2025-04-10 09:05:56.3567 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:05:56.5361 ERROR An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Auth/user" for actions - WebAPI.Controllers.AuthController.GetUserByUsername (AuthenticationAPI), WebAPI.Controllers.AuthController.GetAllUsers (AuthenticationAPI), WebAPI.Controllers.AuthController.SerachByUsername (AuthenticationAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:06:57.6443 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:06:57.6823 INFO Hosting environment: Development 
+2025-04-10 09:06:57.6835 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:06:57.9978 ERROR An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Auth/user" for actions - WebAPI.Controllers.AuthController.GetUserByUsername (AuthenticationAPI), WebAPI.Controllers.AuthController.GetAllUsers (AuthenticationAPI), WebAPI.Controllers.AuthController.SerachByUsername (AuthenticationAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:07:32.1239 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:07:32.1580 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:07:32.1989 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:07:32.1989 INFO Hosting environment: Development 
+2025-04-10 09:07:32.1989 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:07:33.4132 ERROR An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Auth/user" for actions - WebAPI.Controllers.AuthController.GetUserByUsername (AuthenticationAPI), WebAPI.Controllers.AuthController.GetAllUsers (AuthenticationAPI), WebAPI.Controllers.AuthController.SerachByUsername (AuthenticationAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:10:54.5893 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:10:54.6201 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:10:54.6580 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:10:54.6580 INFO Hosting environment: Development 
+2025-04-10 09:10:54.6580 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:10:55.8725 ERROR An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Auth/user" for actions - WebAPI.Controllers.AuthController.GetUserByUsername (AuthenticationAPI), WebAPI.Controllers.AuthController.GetAllUsers (AuthenticationAPI), WebAPI.Controllers.AuthController.SerachByUsername (AuthenticationAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:12:10.4657 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:12:10.4952 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:12:10.5361 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:12:10.5361 INFO Hosting environment: Development 
+2025-04-10 09:12:10.5361 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:12:11.8042 ERROR An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Auth/user" for actions - WebAPI.Controllers.AuthController.GetUserByUsername (AuthenticationAPI), WebAPI.Controllers.AuthController.GetAllUsers (AuthenticationAPI), WebAPI.Controllers.AuthController.SerachByUsername (AuthenticationAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:13:08.4619 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:13:08.4996 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:13:08.5438 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:13:08.5438 INFO Hosting environment: Development 
+2025-04-10 09:13:08.5438 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:13:09.6846 ERROR An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Auth/user" for actions - WebAPI.Controllers.AuthController.GetUserByUsername (AuthenticationAPI), WebAPI.Controllers.AuthController.GetAllUsers (AuthenticationAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:14:01.2742 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:14:01.3095 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:14:01.3586 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:14:01.3586 INFO Hosting environment: Development 
+2025-04-10 09:14:01.3586 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:14:02.3709 ERROR An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Auth/user" for actions - WebAPI.Controllers.AuthController.GetUserByUsername (AuthenticationAPI), WebAPI.Controllers.AuthController.GetAllUsers (AuthenticationAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:14:11.7427 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:14:11.7722 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:14:11.8068 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:14:11.8068 INFO Hosting environment: Development 
+2025-04-10 09:14:11.8068 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:14:12.7075 ERROR An unhandled exception has occurred while executing the request. Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Auth/user" for actions - WebAPI.Controllers.AuthController.GetUserByUsername (AuthenticationAPI), WebAPI.Controllers.AuthController.GetAllUsers (AuthenticationAPI). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:15:25.9105 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:15:25.9461 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:15:26.0102 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:15:26.0102 INFO Hosting environment: Development 
+2025-04-10 09:15:26.0102 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:15:56.8135 INFO Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-10 09:15:57.2087 ERROR An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+List`1 -> UserDto
+System.Collections.Generic.List`1[[Service.Dtos.UserDto, BusinessLogicLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> Service.Dtos.UserDto
+   at lambda_method56(Closure, Object, UserDto, ResolutionContext)
+   at WebAPI.Controllers.AuthController.GetAllUsers()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:16:56.7913 INFO Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-10 09:17:18.3910 ERROR An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> IEnumerable`1
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[System.Collections.Generic.IEnumerable`1[[DAL.Entities.User, DataAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[DAL.Repositories.UserRepository+<SearchByUsername>d__5, DataAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Service.Dtos.UserDto, BusinessLogicLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+   at lambda_method84(Closure, Object, IEnumerable`1, ResolutionContext)
+   at Service.Services.UserService.SearchByUsername(String username) in C:\Users\aaithamou\source\repos\AuthenticationService\BusinessLogicLayer\Services\UserService.cs:line 62
+   at WebAPI.Controllers.AuthController.SerachByUsername(String username)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:17:18.3910 INFO Executed DbCommand (373ms) [Parameters=[@__username_0_contains='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] LIKE @__username_0_contains ESCAPE N'\' 
+2025-04-10 09:17:50.8279 INFO Executed DbCommand (150ms) [Parameters=[@__username_0_contains='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] LIKE @__username_0_contains ESCAPE N'\' 
+2025-04-10 09:17:50.8279 ERROR An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> IEnumerable`1
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[System.Collections.Generic.IEnumerable`1[[DAL.Entities.User, DataAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[DAL.Repositories.UserRepository+<SearchByUsername>d__5, DataAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Service.Dtos.UserDto, BusinessLogicLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+   at lambda_method84(Closure, Object, IEnumerable`1, ResolutionContext)
+   at Service.Services.UserService.SearchByUsername(String username) in C:\Users\aaithamou\source\repos\AuthenticationService\BusinessLogicLayer\Services\UserService.cs:line 62
+   at WebAPI.Controllers.AuthController.SerachByUsername(String username)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:19:29.2992 INFO Executed DbCommand (67ms) [Parameters=[@__username_0_contains='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] LIKE @__username_0_contains ESCAPE N'\' 
+2025-04-10 09:19:46.5309 ERROR An unhandled exception has occurred while executing the request. AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AsyncStateMachineBox`1 -> IEnumerable`1
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[[System.Collections.Generic.IEnumerable`1[[DAL.Entities.User, DataAccessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Runtime.CompilerServices.IAsyncStateMachine, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]] -> System.Collections.Generic.IEnumerable`1[[Service.Dtos.UserDto, BusinessLogicLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+   at lambda_method101(Closure, Object, IEnumerable`1, ResolutionContext)
+   at Service.Services.UserService.SearchByUsername(String username)
+   at WebAPI.Controllers.AuthController.SerachByUsername(String username)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-10 09:23:10.9474 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:23:10.9893 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:23:11.0394 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:23:11.0394 INFO Hosting environment: Development 
+2025-04-10 09:23:11.0394 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:23:24.0122 INFO Executed DbCommand (43ms) [Parameters=[@__username_0_contains='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] LIKE @__username_0_contains ESCAPE N'\' 
+2025-04-10 09:24:36.3872 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:24:36.4243 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:24:36.4840 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:24:36.4840 INFO Hosting environment: Development 
+2025-04-10 09:24:36.4840 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:26:40.7721 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:26:40.8243 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:26:40.8721 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:26:40.8721 INFO Hosting environment: Development 
+2025-04-10 09:26:40.8721 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:27:33.4151 INFO Executed DbCommand (44ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 09:28:25.2438 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:28:25.2980 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:28:25.3734 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:28:25.3734 INFO Hosting environment: Development 
+2025-04-10 09:28:25.3734 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:30:05.6784 INFO Executed DbCommand (46ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 09:31:56.1919 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:31:56.2187 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:31:56.2533 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:31:56.2533 INFO Hosting environment: Development 
+2025-04-10 09:31:56.2533 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:33:44.9394 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:33:44.9822 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:33:45.0490 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:33:45.0490 INFO Hosting environment: Development 
+2025-04-10 09:33:45.0490 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:35:32.7939 INFO Now listening on: https://localhost:7176 
+2025-04-10 09:35:32.8331 INFO Now listening on: http://localhost:5141 
+2025-04-10 09:35:32.8898 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:35:32.8898 INFO Hosting environment: Development 
+2025-04-10 09:35:32.8898 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:36:54.4582 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:36:54.5098 INFO Hosting environment: Development 
+2025-04-10 09:36:54.5120 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:37:26.9794 INFO Executed DbCommand (62ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 09:38:00.4075 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:38:00.4405 INFO Hosting environment: Development 
+2025-04-10 09:38:00.4405 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:38:24.9628 INFO Executed DbCommand (61ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 09:50:06.3933 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:50:06.4325 INFO Hosting environment: Development 
+2025-04-10 09:50:06.4325 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 09:50:51.9497 INFO Executed DbCommand (51ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 09:59:39.8668 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 09:59:39.9079 INFO Hosting environment: Development 
+2025-04-10 09:59:39.9094 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 10:00:22.1210 INFO Executed DbCommand (55ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 10:10:01.2085 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 10:10:01.2950 INFO Hosting environment: Development 
+2025-04-10 10:10:01.2950 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 10:10:36.9074 INFO Executed DbCommand (43ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 10:15:13.7688 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 10:15:13.8193 INFO Hosting environment: Development 
+2025-04-10 10:15:13.8193 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 10:15:58.1057 INFO Executed DbCommand (39ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 10:18:18.9742 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 10:18:19.0141 INFO Hosting environment: Development 
+2025-04-10 10:18:19.0141 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 10:18:57.2393 INFO Executed DbCommand (77ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 10:21:13.6561 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 10:21:13.6965 INFO Hosting environment: Development 
+2025-04-10 10:21:13.6965 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 10:23:03.8938 INFO Executed DbCommand (41ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 10:29:35.3960 INFO Executed DbCommand (6ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 10:36:57.0661 INFO Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 10:48:49.7046 INFO Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 10:54:38.7950 INFO Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 10:56:36.5020 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 10:56:36.5451 INFO Hosting environment: Development 
+2025-04-10 10:56:36.5474 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 12:16:52.5185 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 12:16:52.5905 INFO Hosting environment: Development 
+2025-04-10 12:16:52.5905 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 12:21:15.3520 INFO Executed DbCommand (88ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 12:35:30.0703 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 12:35:30.1867 INFO Hosting environment: Development 
+2025-04-10 12:35:30.1867 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 12:37:52.3426 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 12:37:52.4129 INFO Hosting environment: Development 
+2025-04-10 12:37:52.4129 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 12:39:58.2801 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 12:39:58.3496 INFO Hosting environment: Development 
+2025-04-10 12:39:58.3496 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 12:48:37.1722 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 12:48:37.3102 INFO Hosting environment: Development 
+2025-04-10 12:48:37.3151 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 13:03:06.7333 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 13:03:06.8563 INFO Hosting environment: Development 
+2025-04-10 13:03:06.8599 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 13:08:57.9072 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 13:08:58.0019 INFO Hosting environment: Development 
+2025-04-10 13:08:58.0019 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 13:15:27.8825 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 13:15:27.9338 INFO Hosting environment: Development 
+2025-04-10 13:15:27.9368 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 13:33:06.5037 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 13:33:06.5847 INFO Hosting environment: Development 
+2025-04-10 13:33:06.5847 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 13:49:09.2084 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 13:49:09.3247 INFO Hosting environment: Development 
+2025-04-10 13:49:09.3405 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:00:34.9770 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:00:35.0365 INFO Hosting environment: Development 
+2025-04-10 14:00:35.0365 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:04:22.3038 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:04:22.3813 INFO Hosting environment: Development 
+2025-04-10 14:04:22.3813 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:08:25.2465 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:08:25.3225 INFO Hosting environment: Development 
+2025-04-10 14:08:25.3264 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:18:09.0366 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:18:09.0842 INFO Hosting environment: Development 
+2025-04-10 14:18:09.0842 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:24:38.8397 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:24:38.9327 INFO Hosting environment: Development 
+2025-04-10 14:24:38.9327 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:25:17.9272 INFO Executed DbCommand (54ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 14:25:17.9543 INFO Registering to the application... 
+2025-04-10 14:25:18.2078 INFO Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [PasswordHash], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3); 
+2025-04-10 14:26:36.4304 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:26:36.5185 INFO Hosting environment: Development 
+2025-04-10 14:26:36.5185 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:28:03.8556 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:28:03.9253 INFO Hosting environment: Development 
+2025-04-10 14:28:03.9253 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:29:19.5465 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:29:19.6319 INFO Hosting environment: Development 
+2025-04-10 14:29:19.6367 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:34:29.4035 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:34:29.5251 INFO Hosting environment: Development 
+2025-04-10 14:34:29.5251 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:38:54.2924 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:38:54.3661 INFO Hosting environment: Development 
+2025-04-10 14:38:54.3661 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:39:22.3113 INFO Executed DbCommand (152ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 14:45:18.4949 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:45:18.5894 INFO Hosting environment: Development 
+2025-04-10 14:45:18.5936 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:52:12.1799 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:52:12.2900 INFO Hosting environment: Development 
+2025-04-10 14:52:12.2900 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:57:06.5660 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 14:57:06.6486 INFO Hosting environment: Development 
+2025-04-10 14:57:06.6486 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 14:57:42.5646 INFO Executed DbCommand (164ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 14:58:36.5078 INFO Executed DbCommand (25ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 15:00:58.8454 INFO Executed DbCommand (11ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 15:11:37.6095 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 15:11:37.6893 INFO Hosting environment: Development 
+2025-04-10 15:11:37.6928 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 15:15:56.7146 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 15:15:56.8069 INFO Hosting environment: Development 
+2025-04-10 15:15:56.8069 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 15:18:57.8685 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 15:18:58.0577 INFO Hosting environment: Development 
+2025-04-10 15:18:58.0577 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 15:23:31.3720 INFO Executed DbCommand (143ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 15:30:51.0381 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 15:30:51.1842 INFO Hosting environment: Development 
+2025-04-10 15:30:51.1923 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 15:33:22.7624 INFO Executed DbCommand (403ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 15:33:22.7624 INFO Executed DbCommand (23ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 15:33:22.8294 INFO Registering to the application... 
+2025-04-10 15:33:22.8294 INFO Registering to the application... 
+2025-04-10 15:33:23.7928 INFO Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [PasswordHash], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3); 
+2025-04-10 15:33:23.7928 INFO Executed DbCommand (10ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [PasswordHash], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3); 
+2025-04-10 15:35:23.0153 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-10 15:35:23.1443 INFO Hosting environment: Development 
+2025-04-10 15:35:23.1443 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationAPI 
+2025-04-10 15:36:15.1416 INFO Executed DbCommand (176ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-10 15:36:15.2117 INFO Registering to the application... 
+2025-04-10 15:36:16.3005 ERROR Failed executing DbCommand (152ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [PasswordHash], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3); 
+2025-04-10 15:37:25.1583 INFO Executed DbCommand (28ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 

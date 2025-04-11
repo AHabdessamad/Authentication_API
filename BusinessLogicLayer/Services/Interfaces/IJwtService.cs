@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Service.Dtos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace Service.Services.Interfaces
 {
     public interface IJwtService
     {
-        public string GenerateToken(int userId);
+        public string GenerateToken(UserDto user);
 
     }
 }

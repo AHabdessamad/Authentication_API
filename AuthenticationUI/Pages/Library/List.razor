@@ -1,0 +1,103 @@
+﻿@page "/Book"
+@inject LibraryService libraryService
+
+<h1>Books</h1>
+<br/>
+
+<div class="row mb-3">
+
+    <div class="input-group col-md-5 text-md-right">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search by title..." 
+            @bind="SearchTitle" @bind:event="oninput" />
+            <button class="btn btn-primary ms-1" type="button" @onclick="SearchForBook">
+                Search
+            </button>
+            <button class="btn btn-primary ms-1" type="button" @onclick="ClearSearch">
+                Clear
+            </button>
+        </div>
+    </div>
+</div>
+
+@if (books == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="bg-primary text-white">
+            <tr>
+                <th style="width:20%">Title</th>
+                <th style="width:10%">Price</th>
+                <th style="width:15%">Author</th>
+                <th style="width:15%">Publish Date</th>
+                <th style="width:10%">Copies</th>
+                <th style="width:20%">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in books)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.Price.ToString("C")</td>
+                    <td>@book.Author</td>
+                    <td>@book.PublishDate.ToString("MM/dd/yyyy")</td>
+                    <td>@book.NbrOfCopy</td>
+                    <td>
+                        <a href="/book/details/@book.Id" class="btn btn-info btn-sm">
+                            <span class="oi oi-info">View</span>
+                        </a>
+                        <AuthorizeView Roles="Admin">
+                            <Authorized>
+                                <a href="book/update/@book.Id" class="btn btn-warning btn-sm">
+                                    <span class="oi oi-trash">Update</span>
+                                </a>
+                                <button @onclick="@(() => DeleteBook(book.Id))" class="btn btn-danger btn-sm"> 
+                                    <span class="oi oi-trash">Delete</span> 
+                                </button>
+                            </Authorized>
+                        </AuthorizeView>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+
+    public List<Book> books = new List<Book>();
+    public string SearchTitle { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ClearSearch();
+    }
+
+    protected async Task ClearSearch()
+    {
+        SearchTitle = string.Empty;
+        books = await libraryService.GetBooks();
+    }
+
+    protected async Task SearchForBook()
+    {
+        if (!string.IsNullOrEmpty(SearchTitle))
+        {
+            books = await libraryService.SearchBook(SearchTitle);
+            return;
+        }
+    }
+
+
+    public async Task DeleteBook(int id)
+    {
+        await libraryService.DeleteBook(id);
+        books = await libraryService.GetBooks(); 
+    }
+
+
+}

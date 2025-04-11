@@ -1,0 +1,54 @@
+﻿@page "/book/add"
+@inject LibraryService libraryService
+@inject NavigationManager navigationManager
+
+<h3>Add Book</h3>
+
+<EditForm Model="@book" OnValidSubmit="HandleCreateBook">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <InputText class="form-control" @bind-Value="book.Title" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">ISBN</label>
+        <InputText class="form-control" @bind-Value="book.ISBN" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Price</label>
+        <InputNumber class="form-control" @bind-Value="book.Price" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Author</label>
+        <InputText class="form-control" @bind-Value="book.Author" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Publish Date</label>
+        <InputDate class="form-control" @bind-Value="book.PublishDate" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Number of Copies</label>
+        <InputNumber class="form-control" @bind-Value="book.NbrOfCopy" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Book</button>
+</EditForm>
+
+@code {
+
+    Book book = new Book();
+
+    private async Task HandleCreateBook()
+    {
+        await libraryService.CreateBook(book);
+        navigationManager.NavigateTo("/book");
+    }
+
+}

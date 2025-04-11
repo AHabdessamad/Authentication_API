@@ -160,20 +160,3 @@ main[b-p5akx5yh4z] {
         overflow-y: auto;
     }
 }
-/* /Pages/login.razor.rz.scp.css */
-body[b-fykuf4aqh2] {
-}
-.rounded-t-5[b-fykuf4aqh2] {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-}
-
-@media (min-width: 992px) {
-    .rounded-tr-lg-0[b-fykuf4aqh2] {
-        border-top-right-radius: 0;
-    }
-
-    .rounded-bl-lg-5[b-fykuf4aqh2] {
-        border-bottom-left-radius: 0.5rem;
-    }
-}

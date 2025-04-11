@@ -9,6 +9,10 @@
       {
         "Path": "AuthenticationUI\\AuthenticationUI.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\..\\Desktop\\3_tier_RestAPI_Library\\BookApi\\BookApi.csproj",
+        "Action": "Start"
       }
     ]
   }

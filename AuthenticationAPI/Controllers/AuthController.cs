@@ -1,6 +1,7 @@
 ﻿using AuthenticationAPI.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Service.Dtos;
 using Service.Services.Interfaces;
 
 namespace WebAPI.Controllers
@@ -15,11 +16,12 @@ namespace WebAPI.Controllers
         private readonly IMapper _mapper;
         private readonly ILogger _logger;
 
-        public AuthController(IUserService userService, IJwtService jwtService, ILogger logger  )
+        public AuthController(IUserService userService, IJwtService jwtService, ILogger logger, IMapper mapper  )
         {
             _userService = userService;
             _jwtService = jwtService;
             _logger = logger;
+            _mapper = mapper;
         }
 
         [HttpPost("register")]
@@ -31,6 +33,7 @@ namespace WebAPI.Controllers
             }
 
             var _user = await _userService.GetUserByUsernameAsync(model.Username);
+          
 
             if (_user != null) return BadRequest(new { message ="User already exist" });
 
@@ -52,16 +55,43 @@ namespace WebAPI.Controllers
             var _user = await _userService.GetUserByUsernameAsync(model.Username);
 
             if (_user == null || !_userService.VerifyPassword(_user, model.Password))
-                return BadRequest(new { message = "Worng password Or User not exist" });
-            
+                return BadRequest("Worng password Or User not exist");
 
-            var token = _jwtService.GenerateToken(_user.Id);
+            var __user = _mapper.Map<UserDto>(_user);
 
-            return _userService.GetUserByUsernameAsync(model.Username) != null
+            var token = _jwtService.GenerateToken(__user);
+
+
+            return _user != null
                 ? Ok(new { token })
-                : BadRequest(new { message = "login failed" });
+                : BadRequest("login failed");
 
         }
+
+
+        [HttpGet("user")]
+        public async Task<IActionResult> GetAllUsers()
+        {
+            var _user = await _userService.GetAllUserAsync();
+
+            if (_user == null)
+                return BadRequest("User not exist");
+
+            return Ok(new { _user });
+        }
+
+        [HttpGet("user/search")]
+        public async Task<IActionResult> SerachByUsername(string username)
+        {
+            var _user = await _userService.SearchByUsername(username);
+
+            if (_user == null)
+                return BadRequest("User not exist");
+
+            return Ok(new { _user });
+        }
+
+
     }
 
 }

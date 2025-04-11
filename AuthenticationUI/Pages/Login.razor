@@ -8,7 +8,6 @@
 
 <EditForm Model="@user" OnValidSubmit="HandleLogin">
     <DataAnnotationsValidator />
-    <ValidationSummary />
     <div class="row mt-5">
         <div class="col-lg-4 offset-lg-4 pt-4 pb-4 border">
             <div class="mb-3 text-center">
@@ -22,15 +21,16 @@
             </div>
             <div class="mb-3">
                 <label>User Name</label>
-                <input  class="form-control" id="username" @bind="user.Username" placeholder="User Name" />
+                <input  class="form-control" @bind="user.Username" placeholder="User Name" />
+                <ValidationMessage For="@(() => user.Username)" />
             </div>
             <div class="mb-3">
                 <label>Password</label>
-
-                <input  type="password" id="password" @bind="user.Password" class="form-control" placeholder="Password" />
+                <input  type="password" @bind="user.Password" class="form-control" placeholder="Password" />
+                <ValidationMessage For="@(() => user.Password)" />
             </div>
             <div class="mb-3 d-grid gap-2">
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-color">Login</button>
             </div>
             <a href="/register" target="_blank">Register</a>
         </div>
@@ -41,8 +41,9 @@
     LogingDTO user = new LogingDTO();
     private string? errorMessage;
 
-    private async void HandleLogin()
+    private async Task HandleLogin()
     {
+        errorMessage = null;
         Console.WriteLine("Login page loaded");
         var customAuthService = (CustomAuthService)authProvider;
         var result = await customAuthService.LoginAsync(user.Username, user.Password);
@@ -51,7 +52,10 @@
         {
             navigationManager.NavigateTo("/");
         }
-        errorMessage = result.Message;
+        else
+        {
+            errorMessage = result.Message;
+        }
     }
 
 }

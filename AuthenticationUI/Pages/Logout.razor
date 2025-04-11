@@ -1,0 +1,12 @@
+﻿@page "/logout"
+@inject HttpClient Http
+@inject AuthenticationStateProvider authProvider
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var customAuthService = (CustomAuthService)authProvider;
+        await customAuthService.LogoutAsync();
+    }
+}

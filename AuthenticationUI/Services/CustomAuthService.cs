@@ -1,7 +1,9 @@
 ﻿using AuthenticationUI.Models;
 using AuthenticationUI.Results;
 using Blazored.LocalStorage;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
+using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http.Json;
 using System.Security.Claims;
 using System.Text.Json;
@@ -12,21 +14,76 @@ namespace AuthenticationUI.Services
     {
         private readonly HttpClient _httpClient;
         private readonly ILocalStorageService _localStorageService;
-
+        private NavigationManager _navigationManager;
+        private string accessToken = "";
         private readonly ClaimsPrincipal Unauthenticated =
             new ClaimsPrincipal(new ClaimsIdentity());
 
-        public CustomAuthService(HttpClient httpClient, ILocalStorageService localStorageService)
+        public CustomAuthService(HttpClient httpClient, ILocalStorageService localStorageService, NavigationManager navigationManager)
         {
             _httpClient = httpClient;
             _localStorageService = localStorageService;
+            _navigationManager = navigationManager;
         }
+        public static IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
+        {
+            var payload = jwt.Split('.')[1];
+
+            var jsonBytes = ParseBase64WithoutPadding(payload);
+
+            var decodedPayload = System.Text.Encoding.UTF8.GetString(jsonBytes);
+            Console.WriteLine($"Decoded JWT Payload: {decodedPayload}");
+
+            //User = new User
+            //{
+            //    Id = Convert.ToInt32(decodedPayload.),
+            //    Username = user.FindFirst("name")?.Value,
+            //    Email = user.FindFirst("email")?.Value,
+            //    Role = user.FindFirst("role")?.Value
+            //};
+
+            var keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
+
+            var claims = new List<Claim>();
+
+            foreach (var kvp in keyValuePairs)
+            {
+                if (kvp.Key == "role")
+                {
+                    // If the role is an array, deserialize it and add each role as a claim
+                    if (kvp.Value is JsonElement jsonElement && jsonElement.ValueKind == JsonValueKind.Array)
+                    {
+                        foreach (var role in jsonElement.EnumerateArray())
+                        {
+                            claims.Add(new Claim(ClaimTypes.Role, role.GetString()));
+                        }
+                    }
+                    else
+                    {
+                        // If the role is a single value, add it directly
+                        claims.Add(new Claim(ClaimTypes.Role, kvp.Value.ToString()));
+                    }
+                }
+                else
+                {
+                    // Add other claims
+                    claims.Add(new Claim(kvp.Key, kvp.Value.ToString()));
+                }
+            }
+            
+
+            return claims;
+        }
+
+
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {
             try
             {
                 var token = await _localStorageService.GetItemAsync<string>("accessToken");
-                if(string.IsNullOrEmpty(token))
+                accessToken = token;
+
+                if (string.IsNullOrEmpty(token))
                 {
                     return new AuthenticationState(Unauthenticated);
                 }
@@ -36,23 +93,13 @@ namespace AuthenticationUI.Services
                     new System.Net.Http.Headers.AuthenticationHeaderValue("bearer", token);
 
                 var user = new ClaimsPrincipal(identity);
+
                 return new AuthenticationState(user);
             }
             catch (Exception ex)
             {
                 throw new Exception("Error while checking authentication", ex);
-
             }
-        }
-        public static IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
-        {
-            var payload = jwt.Split('.')[1];
-
-            var jsonBytes = ParseBase64WithoutPadding(payload);
-
-            var keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
-
-            return keyValuePairs.Select(kvp => new Claim(kvp.Key, kvp.Value.ToString()));
         }
 
         private static byte[] ParseBase64WithoutPadding(string base64)
@@ -65,32 +112,42 @@ namespace AuthenticationUI.Services
             return Convert.FromBase64String(base64);
         }
 
+
+
         public async Task<FormResult> LoginAsync(string username, string password)
         {
-            _httpClient.BaseAddress = new Uri("https://localhost:44353");
 
             try
             {
                 var res = await _httpClient.PostAsJsonAsync(
-                    "/api/Auth/login",
+                    "api/Auth/login",
                     new { 
                         username, 
                         password 
                     });
-                Console.WriteLine(res);
-                if (res.IsSuccessStatusCode)
+               if (res.IsSuccessStatusCode)
                 {
 
                     var tokenResponse = await res.Content.ReadAsStringAsync();
+
                     var tokenObject = JsonSerializer.Deserialize<Dictionary<string, string>>(tokenResponse);
 
-                    var token = tokenObject["token"];
+                    if (tokenObject != null && tokenObject.TryGetValue("token", out var token))
+                    {
+                        // Store the token in local storage
+                        await _localStorageService.SetItemAsync("accessToken", token);
 
-                    await _localStorageService.SetItemAsync("accessToken", tokenResponse);
+                        //await _localStorageService.SetItemAsync("role", token);
+                        // Notify the authentication state has changed
+                        NotifyAuthenticationStateChanged(GetAuthenticationStateAsync());
 
-                    NotifyAuthenticationStateChanged(GetAuthenticationStateAsync());
-
-                    return new FormResult(true, "Login successful");
+                        return new FormResult(true, "Login successful");
+                    }
+                } else
+                {
+                    // Read error message from response
+                    var errorContent = await res.Content.ReadAsStringAsync();
+                    return new FormResult(false, errorContent);
                 }
             }
             catch(Exception ex)
@@ -107,7 +164,7 @@ namespace AuthenticationUI.Services
             try
             {
                 var res = await _httpClient.PostAsJsonAsync(
-                    "https://localhost:44353/api/Auth/Register", registerDTO);
+                    "/api/Auth/Register", registerDTO);
                 Console.WriteLine(res);
                 if (res.IsSuccessStatusCode)
                 {
@@ -120,6 +177,32 @@ namespace AuthenticationUI.Services
             }
 
             return new FormResult(false, "Register failed");
+        }
+        public async Task LogoutAsync()
+        {
+            await _localStorageService.RemoveItemAsync("accessToken");
+            NotifyAuthenticationStateChanged(Task.FromResult( new AuthenticationState(Unauthenticated)));
+            _navigationManager.NavigateTo("/login", forceLoad: true);
+        }
+
+        public async Task<FormResult> GetAllUserAsync(RegisterDTO registerDTO)
+        {
+
+            try
+            {
+                var res = await _httpClient.GetAsync("api/Auth/user");
+
+                if (res.IsSuccessStatusCode)
+                {
+                    return new FormResult(true, "Users Featched Successfully");
+                }
+            }
+            catch (Exception ex)
+            {
+                return new FormResult(false, ex.Message);
+            }
+
+            return new FormResult(false, "Fetach users failed");
         }
     }
 }

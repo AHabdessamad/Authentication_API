@@ -11,6 +11,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "Busin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationUI", "AuthenticationUI\AuthenticationUI.csproj", "{5DE2B3B0-CE73-4526-B375-C63326CA7780}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthenticationService", "AuthenticationService", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LibraryService", "LibraryService", "{CBFC029A-97CD-467E-83F0-7D86FA2EBE41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookApi", "..\..\..\Desktop\3_tier_RestAPI_Library\BookApi\BookApi.csproj", "{E26FEDCE-E77C-ED3F-2ACF-5CC584521415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "..\..\..\Desktop\3_tier_RestAPI_Library\BusinessLogicLayer\BusinessLogicLayer.csproj", "{95F33AA7-25BE-FE71-5349-13DCE5315FDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "..\..\..\Desktop\3_tier_RestAPI_Library\DataAccessLayer\DataAccessLayer.csproj", "{1B3CE0AE-574C-492C-DDE3-F38AA4BBFA32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedDtos", "..\..\..\Desktop\3_tier_RestAPI_Library\SharedDtos\SharedDtos.csproj", "{BFCFAB7E-3259-3FD9-35E7-2ABBD3BE11AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +45,34 @@ Global
 		{5DE2B3B0-CE73-4526-B375-C63326CA7780}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DE2B3B0-CE73-4526-B375-C63326CA7780}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DE2B3B0-CE73-4526-B375-C63326CA7780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E26FEDCE-E77C-ED3F-2ACF-5CC584521415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E26FEDCE-E77C-ED3F-2ACF-5CC584521415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E26FEDCE-E77C-ED3F-2ACF-5CC584521415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E26FEDCE-E77C-ED3F-2ACF-5CC584521415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F33AA7-25BE-FE71-5349-13DCE5315FDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F33AA7-25BE-FE71-5349-13DCE5315FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F33AA7-25BE-FE71-5349-13DCE5315FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F33AA7-25BE-FE71-5349-13DCE5315FDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3CE0AE-574C-492C-DDE3-F38AA4BBFA32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3CE0AE-574C-492C-DDE3-F38AA4BBFA32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3CE0AE-574C-492C-DDE3-F38AA4BBFA32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3CE0AE-574C-492C-DDE3-F38AA4BBFA32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFCFAB7E-3259-3FD9-35E7-2ABBD3BE11AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFCFAB7E-3259-3FD9-35E7-2ABBD3BE11AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFCFAB7E-3259-3FD9-35E7-2ABBD3BE11AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFCFAB7E-3259-3FD9-35E7-2ABBD3BE11AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8C2A708-CA7B-4E68-A06F-9DF5C7A84784} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{ABCDADA3-A311-4A1A-8084-7F08CE2FB7E7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{10216A8B-A999-4CFD-84F4-424540C16370} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E26FEDCE-E77C-ED3F-2ACF-5CC584521415} = {CBFC029A-97CD-467E-83F0-7D86FA2EBE41}
+		{95F33AA7-25BE-FE71-5349-13DCE5315FDA} = {CBFC029A-97CD-467E-83F0-7D86FA2EBE41}
+		{1B3CE0AE-574C-492C-DDE3-F38AA4BBFA32} = {CBFC029A-97CD-467E-83F0-7D86FA2EBE41}
+		{BFCFAB7E-3259-3FD9-35E7-2ABBD3BE11AE} = {CBFC029A-97CD-467E-83F0-7D86FA2EBE41}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E029EAB4-9B2E-405F-B4D5-EF62B43C757F}

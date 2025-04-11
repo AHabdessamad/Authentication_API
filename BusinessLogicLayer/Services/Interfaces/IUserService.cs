@@ -14,5 +14,8 @@ namespace Service.Services.Interfaces
         public Task<User> GetUserByUsernameAsync(string username);
         public Task<UserDto> RegisterUserAsync(RegisterModel user);
         bool VerifyPassword(User user, string password);
+
+        public Task<IEnumerable<UserDto>> GetAllUserAsync();
+        public Task<IEnumerable<UserDto>> SearchByUsername(string username);
     }
 }

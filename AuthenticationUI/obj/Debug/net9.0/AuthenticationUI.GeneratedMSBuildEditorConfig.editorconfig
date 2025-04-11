@@ -32,16 +32,52 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEVtcHR5TGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Library/CreateBook.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicmFyeVxDcmVhdGVCb29rLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Library/List.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicmFyeVxMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Library/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicmFyeVxVcGRhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Library/View.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicmFyeVxWaWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Users/AddUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQWRkVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Users/DeleteUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRGVsZXRlVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Users/UpdateUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXBkYXRlVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Users/View.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVmlldy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/RedirectToLogin.razor]
@@ -59,7 +95,3 @@ build_metadata.AdditionalFiles.CssScope = b-p5akx5yh4z
 [C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-6r56fpjoo8
-
-[C:/Users/aaithamou/source/repos/AuthenticationService/AuthenticationUI/Pages/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-fykuf4aqh2

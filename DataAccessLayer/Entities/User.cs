@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
+    public enum Role{ Admin, User }
     public class User
     {
         [Key] 
@@ -16,6 +17,7 @@ namespace DAL.Entities
         public string Username { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty ;
         public string PasswordHash { get; set; } = string.Empty; // Stocké sous forme hachée
+        public Role Role { get; set; } = Role.User;
 
     }
 }

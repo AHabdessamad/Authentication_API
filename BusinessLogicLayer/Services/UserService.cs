@@ -35,6 +35,7 @@ namespace Service.Services
             var _user = _mapper.Map<User>(user);
 
             _user.PasswordHash = new PasswordHasher<User>().HashPassword(_user, _user.PasswordHash);
+            _user.Role = DAL.Entities.Role.User;
 
             var __user = await _userRepository.RegisterUserAsync(_user);
 
@@ -49,7 +50,20 @@ namespace Service.Services
 
         }
 
-}
+        public async Task<IEnumerable<UserDto>> GetAllUserAsync()
+        {
+            var users = await _userRepository.GetAllUserAsync();
+            var _users = _mapper.Map<IEnumerable<UserDto>>(users);
+            return _users;
+        }
+
+        public async Task<IEnumerable<UserDto>> SearchByUsername(string username)
+        {
+            var users = await _userRepository.SearchByUsername(username);
+            var _users = _mapper.Map<IEnumerable<UserDto>>(users);
+            return _users;
+        }
+    }
 }
 
 

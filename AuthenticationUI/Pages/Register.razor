@@ -5,33 +5,41 @@
 
 <EditForm Model="@user" OnValidSubmit="HandleRegister">
     <DataAnnotationsValidator />
-    <ValidationSummary />
     <div class="row mt-5">
         <div class="col-lg-4 offset-lg-4 pt-4 pb-4 border">
             <div class="mb-3 text-center">
                 <h3>REGISTER</h3>
+                @if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    <div class="alert alert-danger mt-3" role="alert">
+                        @errorMessage
+                    </div>
+                }
             </div>
             <div class="mb-3">
                 <label>User Name</label>
                 <input class="form-control" id="username" @bind="user.Username" placeholder="User Name" />
+                <ValidationMessage For="@(()=> user.Username)" />
             </div>
             <div class="mb-3">
                 <label>Email</label>
-                <input class="form-control" id="email" @bind="user.Email" placeholder="Enter your mail address" />
+                <input class="form-control" @bind="user.Email" placeholder="Enter your mail address" />
+                <ValidationMessage For="@(()=> user.Email)" />
             </div>
             <div class="mb-3">
                 <label>Password</label>
-
-                <input type="password" id="password" @bind="user.Password" class="form-control" placeholder="Password" />
+                <input type="password" @bind="user.Password" class="form-control" placeholder="Password" />
+                <ValidationMessage For="@(()=> user.Password)"/>
             </div>
             <div class="mb-3 d-grid gap-2">
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" class="btn btn-color">Register</button>
             </div>
         </div>
     </div>
 </EditForm>
 @code {
     RegisterDTO user = new RegisterDTO();
+    private string? errorMessage;
 
     public async void HandleRegister()
     {
@@ -43,6 +51,7 @@
             Console.WriteLine(result.Message);
             navigationManager.NavigateTo("/login");
         }
+        errorMessage = result.Message;
     }
 
 }

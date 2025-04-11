@@ -10,6 +10,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using Service.Dtos;
 
 namespace Service.Services
 {
@@ -24,7 +25,8 @@ namespace Service.Services
             _config = config;
         }
 
-        public string GenerateToken(int userId)
+
+        public string GenerateToken(UserDto user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
 
@@ -32,7 +34,11 @@ namespace Service.Services
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                        new Claim(ClaimTypes.Name, userId.ToString())
+                        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                        new Claim(ClaimTypes.Name, user.Username.ToString()),
+                        new Claim(ClaimTypes.Role, user.Role.ToString()),
+                        new Claim(ClaimTypes.Email, user.Email.ToString())
+
                 }),
 
                 Issuer = _config.GetSection("Issuer").Value,

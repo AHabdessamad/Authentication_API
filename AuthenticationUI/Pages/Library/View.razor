@@ -1,0 +1,44 @@
+﻿@page "/book/details/{Id}"
+@inject LibraryService libraryService
+
+<h1>View Book details</h1>
+<br />
+
+<table class="table col-md-6">
+    <tbody>
+        <tr>
+            <th scope="row" class="bg-light" style="width: 30%">ID</th>
+            <td>@book.Id</td>
+        </tr>
+        <tr>
+            <th scope="row" class="bg-light">Title</th>
+            <td>@book.Title</td>
+        </tr>
+        <tr>
+            <th scope="row" class="bg-light">ISBN</th>
+            <td>@book.ISBN</td>
+        </tr>
+        <tr>
+            <th scope="row" class="bg-light">Price</th>
+            <td>@book.Price.ToString("C")</td>
+        </tr>
+        <tr>
+            <th scope="row" class="bg-light">Author</th>
+            <td>@book.Author</td>
+        </tr>
+    </tbody>
+</table>
+
+@code {
+
+    [Parameter]
+    public string Id { get; set; }
+
+    Book book = new Book();
+
+    protected async override Task OnParametersSetAsync()
+    {
+        book = await libraryService.GetBook(int.Parse(Id));
+    }
+
+}
