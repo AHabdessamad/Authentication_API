@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8k+/AP4fsfA4v9oLkuJeyHN6BVm1ymZnLRjtqw+qL0U=",
+  "Hash": "AzQH1bJQVwujuUHhqqRsFZD4R4p7ahHNdB1rLw2K7UQ=",
   "Source": "AuthenticationUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "v9x8b249xp",
-      "Integrity": "cw1nmMWWEuAWxQS1iwO72+73D4uB+wW8qvlNNBWLH2g=",
+      "Fingerprint": "hqni9kjx7r",
+      "Integrity": "V84fP3GUX93QwJCNpPmE0DP5NhyweVjZbnMWhHyfkzE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\AuthenticationUI.pdb"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "cfsf0w6va8",
-      "Integrity": "qN2tr/XGFOV38M9oAH13/ghWc8aYpglYsAjClyuSBRI=",
+      "Fingerprint": "06i0bjifqn",
+      "Integrity": "CK0gHgc9uRjSwKf6Bf7HCmTmgCX7GRc0AwmS3uZjKbQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\webcil\\AuthenticationUI.wasm"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "f9lm5zb36a",
-      "Integrity": "IxYDTqThD8QVh73O/Q0FbLsnuDPxzWSfHLhYdNeGSyU=",
+      "Fingerprint": "4j8bu7hqgj",
+      "Integrity": "EBZuuFdI9WnITaBMjmScKmjPbw5oRpnYHQoM/tPFnME=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -4973,7 +4973,7 @@
       "OriginalItemSpec": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Core.wasm"
     },
     {
-      "Identity": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\244s2raz4l-f9lm5zb36a.gz",
+      "Identity": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\244s2raz4l-4j8bu7hqgj.gz",
       "SourceId": "AuthenticationUI",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\",
@@ -4987,8 +4987,8 @@
       "RelatedAsset": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "f026a6kbfo",
-      "Integrity": "UY5CNs3w0MnrWkSN+DP8TJ65YDVQX7HyML9vgk8MHcw=",
+      "Fingerprint": "behx4kvugw",
+      "Integrity": "rWWuseGv+m+kHSuY5l5Aob43ACYTBUEA9RafMtDxoUs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -5834,12 +5834,12 @@
       "OriginalItemSpec": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Text.Json.wasm"
     },
     {
-      "Identity": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\8erg1bf7te-v9x8b249xp.gz",
+      "Identity": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\8erg1bf7te-hqni9kjx7r.gz",
       "SourceId": "AuthenticationUI",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/AuthenticationUI#[.{fingerprint=v9x8b249xp}]!.pdb.gz",
+      "RelativePath": "_framework/AuthenticationUI#[.{fingerprint=hqni9kjx7r}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5848,8 +5848,8 @@
       "RelatedAsset": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\AuthenticationUI.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "s3wq4pge1w",
-      "Integrity": "+NKiUDrouqqsCg2L66lFYOAyBzBb8XBEOTgc4c8+nlc=",
+      "Fingerprint": "d1kqgd5fzu",
+      "Integrity": "8VsTQT8zGHF7014NTnPDtwjEY1nNTjQt+0RiEOmv3Ks=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\AuthenticationUI.pdb"
@@ -6107,12 +6107,12 @@
       "OriginalItemSpec": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Security.Cryptography.X509Certificates.wasm"
     },
     {
-      "Identity": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\9jjxairkrh-cfsf0w6va8.gz",
+      "Identity": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\9jjxairkrh-06i0bjifqn.gz",
       "SourceId": "AuthenticationUI",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/AuthenticationUI#[.{fingerprint=cfsf0w6va8}]!.wasm.gz",
+      "RelativePath": "_framework/AuthenticationUI#[.{fingerprint=06i0bjifqn}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6121,8 +6121,8 @@
       "RelatedAsset": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\AuthenticationUI.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "hpyo9srts9",
-      "Integrity": "tU7Gy4KbUzduKXWE8Vp3/rP9ZhfpMgkmLeTthzZ1WxQ=",
+      "Fingerprint": "qh25n3rgu5",
+      "Integrity": "IlEiIimk9r/OJK1epNLBEvXfKOfLahVRruTNPbRjfPs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\AuthenticationUI.wasm"
@@ -11317,7 +11317,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "_framework/AuthenticationUI.cfsf0w6va8.wasm",
+      "Route": "_framework/AuthenticationUI.06i0bjifqn.wasm",
       "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\AuthenticationUI.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11335,11 +11335,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qN2tr/XGFOV38M9oAH13/ghWc8aYpglYsAjClyuSBRI=\""
+          "Value": "\"CK0gHgc9uRjSwKf6Bf7HCmTmgCX7GRc0AwmS3uZjKbQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:58 GMT"
+          "Value": "Fri, 11 Apr 2025 19:18:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11349,7 +11349,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cfsf0w6va8"
+          "Value": "06i0bjifqn"
         },
         {
           "Name": "label",
@@ -11357,18 +11357,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qN2tr/XGFOV38M9oAH13/ghWc8aYpglYsAjClyuSBRI="
+          "Value": "sha256-CK0gHgc9uRjSwKf6Bf7HCmTmgCX7GRc0AwmS3uZjKbQ="
         }
       ]
     },
     {
-      "Route": "_framework/AuthenticationUI.cfsf0w6va8.wasm",
-      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\9jjxairkrh-cfsf0w6va8.gz",
+      "Route": "_framework/AuthenticationUI.06i0bjifqn.wasm",
+      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\9jjxairkrh-06i0bjifqn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000038334739"
+          "Quality": "0.000038330331"
         }
       ],
       "ResponseHeaders": [
@@ -11378,15 +11378,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26085"
+          "Value": "26088"
         },
         {
           "Name": "ETag",
-          "Value": "\"tU7Gy4KbUzduKXWE8Vp3/rP9ZhfpMgkmLeTthzZ1WxQ=\""
+          "Value": "\"IlEiIimk9r/OJK1epNLBEvXfKOfLahVRruTNPbRjfPs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:59 GMT"
+          "Value": "Fri, 11 Apr 2025 19:19:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11406,13 +11406,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"qN2tr/XGFOV38M9oAH13/ghWc8aYpglYsAjClyuSBRI=\""
+          "Value": "W/\"CK0gHgc9uRjSwKf6Bf7HCmTmgCX7GRc0AwmS3uZjKbQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cfsf0w6va8"
+          "Value": "06i0bjifqn"
         },
         {
           "Name": "label",
@@ -11420,13 +11420,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qN2tr/XGFOV38M9oAH13/ghWc8aYpglYsAjClyuSBRI="
+          "Value": "sha256-CK0gHgc9uRjSwKf6Bf7HCmTmgCX7GRc0AwmS3uZjKbQ="
         }
       ]
     },
     {
-      "Route": "_framework/AuthenticationUI.cfsf0w6va8.wasm.gz",
-      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\9jjxairkrh-cfsf0w6va8.gz",
+      "Route": "_framework/AuthenticationUI.06i0bjifqn.wasm.gz",
+      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\9jjxairkrh-06i0bjifqn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11435,7 +11435,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26085"
+          "Value": "26088"
         },
         {
           "Name": "Content-Type",
@@ -11443,11 +11443,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tU7Gy4KbUzduKXWE8Vp3/rP9ZhfpMgkmLeTthzZ1WxQ=\""
+          "Value": "\"IlEiIimk9r/OJK1epNLBEvXfKOfLahVRruTNPbRjfPs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:59 GMT"
+          "Value": "Fri, 11 Apr 2025 19:19:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11465,7 +11465,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "cfsf0w6va8"
+          "Value": "06i0bjifqn"
         },
         {
           "Name": "label",
@@ -11473,12 +11473,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tU7Gy4KbUzduKXWE8Vp3/rP9ZhfpMgkmLeTthzZ1WxQ="
+          "Value": "sha256-IlEiIimk9r/OJK1epNLBEvXfKOfLahVRruTNPbRjfPs="
         }
       ]
     },
     {
-      "Route": "_framework/AuthenticationUI.pdb",
+      "Route": "_framework/AuthenticationUI.hqni9kjx7r.pdb",
       "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\AuthenticationUI.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11496,148 +11496,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cw1nmMWWEuAWxQS1iwO72+73D4uB+wW8qvlNNBWLH2g=\""
+          "Value": "\"V84fP3GUX93QwJCNpPmE0DP5NhyweVjZbnMWhHyfkzE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-cw1nmMWWEuAWxQS1iwO72+73D4uB+wW8qvlNNBWLH2g="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/AuthenticationUI.pdb",
-      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\8erg1bf7te-v9x8b249xp.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000024120215"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41458"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+NKiUDrouqqsCg2L66lFYOAyBzBb8XBEOTgc4c8+nlc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"cw1nmMWWEuAWxQS1iwO72+73D4uB+wW8qvlNNBWLH2g=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-cw1nmMWWEuAWxQS1iwO72+73D4uB+wW8qvlNNBWLH2g="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/AuthenticationUI.pdb.gz",
-      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\8erg1bf7te-v9x8b249xp.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41458"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+NKiUDrouqqsCg2L66lFYOAyBzBb8XBEOTgc4c8+nlc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+NKiUDrouqqsCg2L66lFYOAyBzBb8XBEOTgc4c8+nlc="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/AuthenticationUI.v9x8b249xp.pdb",
-      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\AuthenticationUI.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "53832"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cw1nmMWWEuAWxQS1iwO72+73D4uB+wW8qvlNNBWLH2g=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:56 GMT"
+          "Value": "Fri, 11 Apr 2025 19:18:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11647,7 +11510,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "v9x8b249xp"
+          "Value": "hqni9kjx7r"
         },
         {
           "Name": "label",
@@ -11655,18 +11518,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-cw1nmMWWEuAWxQS1iwO72+73D4uB+wW8qvlNNBWLH2g="
+          "Value": "sha256-V84fP3GUX93QwJCNpPmE0DP5NhyweVjZbnMWhHyfkzE="
         }
       ]
     },
     {
-      "Route": "_framework/AuthenticationUI.v9x8b249xp.pdb",
-      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\8erg1bf7te-v9x8b249xp.gz",
+      "Route": "_framework/AuthenticationUI.hqni9kjx7r.pdb",
+      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\8erg1bf7te-hqni9kjx7r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000024120215"
+          "Quality": "0.000024119633"
         }
       ],
       "ResponseHeaders": [
@@ -11676,15 +11539,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41458"
+          "Value": "41459"
         },
         {
           "Name": "ETag",
-          "Value": "\"+NKiUDrouqqsCg2L66lFYOAyBzBb8XBEOTgc4c8+nlc=\""
+          "Value": "\"8VsTQT8zGHF7014NTnPDtwjEY1nNTjQt+0RiEOmv3Ks=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:59 GMT"
+          "Value": "Fri, 11 Apr 2025 19:19:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11704,13 +11567,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"cw1nmMWWEuAWxQS1iwO72+73D4uB+wW8qvlNNBWLH2g=\""
+          "Value": "W/\"V84fP3GUX93QwJCNpPmE0DP5NhyweVjZbnMWhHyfkzE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "v9x8b249xp"
+          "Value": "hqni9kjx7r"
         },
         {
           "Name": "label",
@@ -11718,13 +11581,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-cw1nmMWWEuAWxQS1iwO72+73D4uB+wW8qvlNNBWLH2g="
+          "Value": "sha256-V84fP3GUX93QwJCNpPmE0DP5NhyweVjZbnMWhHyfkzE="
         }
       ]
     },
     {
-      "Route": "_framework/AuthenticationUI.v9x8b249xp.pdb.gz",
-      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\8erg1bf7te-v9x8b249xp.gz",
+      "Route": "_framework/AuthenticationUI.hqni9kjx7r.pdb.gz",
+      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\8erg1bf7te-hqni9kjx7r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11733,7 +11596,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41458"
+          "Value": "41459"
         },
         {
           "Name": "Content-Type",
@@ -11741,11 +11604,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+NKiUDrouqqsCg2L66lFYOAyBzBb8XBEOTgc4c8+nlc=\""
+          "Value": "\"8VsTQT8zGHF7014NTnPDtwjEY1nNTjQt+0RiEOmv3Ks=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:59 GMT"
+          "Value": "Fri, 11 Apr 2025 19:19:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11763,7 +11626,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "v9x8b249xp"
+          "Value": "hqni9kjx7r"
         },
         {
           "Name": "label",
@@ -11771,7 +11634,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+NKiUDrouqqsCg2L66lFYOAyBzBb8XBEOTgc4c8+nlc="
+          "Value": "sha256-8VsTQT8zGHF7014NTnPDtwjEY1nNTjQt+0RiEOmv3Ks="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/AuthenticationUI.pdb",
+      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\bin\\Debug\\net9.0\\wwwroot\\_framework\\AuthenticationUI.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V84fP3GUX93QwJCNpPmE0DP5NhyweVjZbnMWhHyfkzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 19:18:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V84fP3GUX93QwJCNpPmE0DP5NhyweVjZbnMWhHyfkzE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/AuthenticationUI.pdb",
+      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\8erg1bf7te-hqni9kjx7r.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000024119633"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41459"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8VsTQT8zGHF7014NTnPDtwjEY1nNTjQt+0RiEOmv3Ks=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 19:19:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"V84fP3GUX93QwJCNpPmE0DP5NhyweVjZbnMWhHyfkzE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V84fP3GUX93QwJCNpPmE0DP5NhyweVjZbnMWhHyfkzE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/AuthenticationUI.pdb.gz",
+      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\8erg1bf7te-hqni9kjx7r.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41459"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8VsTQT8zGHF7014NTnPDtwjEY1nNTjQt+0RiEOmv3Ks=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 19:19:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8VsTQT8zGHF7014NTnPDtwjEY1nNTjQt+0RiEOmv3Ks="
         }
       ]
     },
@@ -11794,11 +11794,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qN2tr/XGFOV38M9oAH13/ghWc8aYpglYsAjClyuSBRI=\""
+          "Value": "\"CK0gHgc9uRjSwKf6Bf7HCmTmgCX7GRc0AwmS3uZjKbQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:58 GMT"
+          "Value": "Fri, 11 Apr 2025 19:18:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11808,18 +11808,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qN2tr/XGFOV38M9oAH13/ghWc8aYpglYsAjClyuSBRI="
+          "Value": "sha256-CK0gHgc9uRjSwKf6Bf7HCmTmgCX7GRc0AwmS3uZjKbQ="
         }
       ]
     },
     {
       "Route": "_framework/AuthenticationUI.wasm",
-      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\9jjxairkrh-cfsf0w6va8.gz",
+      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\9jjxairkrh-06i0bjifqn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000038334739"
+          "Quality": "0.000038330331"
         }
       ],
       "ResponseHeaders": [
@@ -11829,15 +11829,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26085"
+          "Value": "26088"
         },
         {
           "Name": "ETag",
-          "Value": "\"tU7Gy4KbUzduKXWE8Vp3/rP9ZhfpMgkmLeTthzZ1WxQ=\""
+          "Value": "\"IlEiIimk9r/OJK1epNLBEvXfKOfLahVRruTNPbRjfPs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:59 GMT"
+          "Value": "Fri, 11 Apr 2025 19:19:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11857,19 +11857,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"qN2tr/XGFOV38M9oAH13/ghWc8aYpglYsAjClyuSBRI=\""
+          "Value": "W/\"CK0gHgc9uRjSwKf6Bf7HCmTmgCX7GRc0AwmS3uZjKbQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qN2tr/XGFOV38M9oAH13/ghWc8aYpglYsAjClyuSBRI="
+          "Value": "sha256-CK0gHgc9uRjSwKf6Bf7HCmTmgCX7GRc0AwmS3uZjKbQ="
         }
       ]
     },
     {
       "Route": "_framework/AuthenticationUI.wasm.gz",
-      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\9jjxairkrh-cfsf0w6va8.gz",
+      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\9jjxairkrh-06i0bjifqn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11878,7 +11878,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26085"
+          "Value": "26088"
         },
         {
           "Name": "Content-Type",
@@ -11886,11 +11886,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tU7Gy4KbUzduKXWE8Vp3/rP9ZhfpMgkmLeTthzZ1WxQ=\""
+          "Value": "\"IlEiIimk9r/OJK1epNLBEvXfKOfLahVRruTNPbRjfPs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:59 GMT"
+          "Value": "Fri, 11 Apr 2025 19:19:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11908,7 +11908,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tU7Gy4KbUzduKXWE8Vp3/rP9ZhfpMgkmLeTthzZ1WxQ="
+          "Value": "sha256-IlEiIimk9r/OJK1epNLBEvXfKOfLahVRruTNPbRjfPs="
         }
       ]
     },
@@ -11931,11 +11931,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IxYDTqThD8QVh73O/Q0FbLsnuDPxzWSfHLhYdNeGSyU=\""
+          "Value": "\"EBZuuFdI9WnITaBMjmScKmjPbw5oRpnYHQoM/tPFnME=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:47:59 GMT"
+          "Value": "Fri, 11 Apr 2025 19:19:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11945,18 +11945,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IxYDTqThD8QVh73O/Q0FbLsnuDPxzWSfHLhYdNeGSyU="
+          "Value": "sha256-EBZuuFdI9WnITaBMjmScKmjPbw5oRpnYHQoM/tPFnME="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\244s2raz4l-f9lm5zb36a.gz",
+      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\244s2raz4l-4j8bu7hqgj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000075448921"
+          "Quality": "0.000075437538"
         }
       ],
       "ResponseHeaders": [
@@ -11966,11 +11966,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13253"
+          "Value": "13255"
         },
         {
           "Name": "ETag",
-          "Value": "\"UY5CNs3w0MnrWkSN+DP8TJ65YDVQX7HyML9vgk8MHcw=\""
+          "Value": "\"rWWuseGv+m+kHSuY5l5Aob43ACYTBUEA9RafMtDxoUs=\""
         },
         {
           "Name": "Last-Modified",
@@ -11994,19 +11994,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IxYDTqThD8QVh73O/Q0FbLsnuDPxzWSfHLhYdNeGSyU=\""
+          "Value": "W/\"EBZuuFdI9WnITaBMjmScKmjPbw5oRpnYHQoM/tPFnME=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IxYDTqThD8QVh73O/Q0FbLsnuDPxzWSfHLhYdNeGSyU="
+          "Value": "sha256-EBZuuFdI9WnITaBMjmScKmjPbw5oRpnYHQoM/tPFnME="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\244s2raz4l-f9lm5zb36a.gz",
+      "AssetFile": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\AuthenticationUI\\obj\\Debug\\net9.0\\compressed\\244s2raz4l-4j8bu7hqgj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12015,7 +12015,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13253"
+          "Value": "13255"
         },
         {
           "Name": "Content-Type",
@@ -12023,7 +12023,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UY5CNs3w0MnrWkSN+DP8TJ65YDVQX7HyML9vgk8MHcw=\""
+          "Value": "\"rWWuseGv+m+kHSuY5l5Aob43ACYTBUEA9RafMtDxoUs=\""
         },
         {
           "Name": "Last-Modified",
@@ -12045,7 +12045,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UY5CNs3w0MnrWkSN+DP8TJ65YDVQX7HyML9vgk8MHcw="
+          "Value": "sha256-rWWuseGv+m+kHSuY5l5Aob43ACYTBUEA9RafMtDxoUs="
         }
       ]
     },
@@ -12111,7 +12111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Thu, 13 Feb 2025 03:03:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12164,7 +12164,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Thu, 13 Feb 2025 03:03:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12554,7 +12554,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12615,7 +12615,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12707,7 +12707,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12807,7 +12807,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12868,7 +12868,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12921,7 +12921,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13005,7 +13005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13058,7 +13058,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13875,7 +13875,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13928,7 +13928,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14020,7 +14020,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14081,7 +14081,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 18:48:00 GMT"
+          "Value": "Tue, 11 Feb 2025 23:25:06 GMT"
         },
         {
           "Name": "Cache-Control",

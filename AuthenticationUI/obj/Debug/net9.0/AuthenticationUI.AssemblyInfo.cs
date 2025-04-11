@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthenticationUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ecac3cdaeb2a01412e29a2ffa7f778e4243a6414")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+018ff9975c4686e5b3f7f3369f8583c425012c8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthenticationUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthenticationUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

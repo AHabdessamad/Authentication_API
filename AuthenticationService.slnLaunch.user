@@ -3,15 +3,15 @@
     "Name": "back-front",
     "Projects": [
       {
-        "Path": "AuthenticationAPI\\AuthenticationAPI.csproj",
-        "Action": "Start"
-      },
-      {
         "Path": "AuthenticationUI\\AuthenticationUI.csproj",
         "Action": "Start"
       },
       {
-        "Path": "..\\..\\..\\Desktop\\3_tier_RestAPI_Library\\BookApi\\BookApi.csproj",
+        "Path": "LibraryService\\BookApi\\BookApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "AuthenticationService\\AuthenticationAPI\\AuthenticationAPI.csproj",
         "Action": "Start"
       }
     ]
