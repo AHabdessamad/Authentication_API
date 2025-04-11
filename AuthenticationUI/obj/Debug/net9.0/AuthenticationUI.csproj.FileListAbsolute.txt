@@ -1,3 +1,5 @@
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.g0bkeaifx1.pdb
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.k1k4wk355k.wasm
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\Blazored.LocalStorage.12n6dz54qr.wasm
@@ -259,6 +261,7 @@ C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.Buffers.m3enj6d62j.wasm.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.Resources.Reader.6dewscbl2z.wasm.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.Text.Json.spqbvbiy0p.wasm.gz
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.g0bkeaifx1.pdb.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.ComponentModel.TypeConverter.yl273bvsmt.wasm.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.Runtime.CompilerServices.VisualC.b05mwug83r.wasm.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.Diagnostics.FileVersionInfo.4f475qbfex.wasm.gz
@@ -271,6 +274,7 @@ C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.Threading.Timer.5bvshcz8rs.wasm.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.Reflection.Emit.r3y2j8tf69.wasm.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.Security.Cryptography.X509Certificates.m2ilqf86hj.wasm.gz
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.k1k4wk355k.wasm.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.Net.HttpListener.o3q2lkyykw.wasm.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.IdentityModel.Tokens.Jwt.e12aoin6r0.wasm.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\System.Reflection.Metadata.act044hy0s.wasm.gz
@@ -1136,6 +1140,9 @@ C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\9d6u80rr7k-tjcz0u77k5.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\liqve14nai-tptq2av103.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\5l4megvf9w-lfu7j35m59.gz
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\9jjxairkrh-k1k4wk355k.gz
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\8erg1bf7te-g0bkeaifx1.gz
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\244s2raz4l-r0yjjsqptd.gz
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -1151,10 +1158,3 @@ C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\refint\AuthenticationUI.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\AuthenticationUI.pdb
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\ref\AuthenticationUI.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.hqni9kjx7r.pdb
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.06i0bjifqn.wasm
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.hqni9kjx7r.pdb.gz
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.06i0bjifqn.wasm.gz
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\9jjxairkrh-06i0bjifqn.gz
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\8erg1bf7te-hqni9kjx7r.gz
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\244s2raz4l-4j8bu7hqgj.gz

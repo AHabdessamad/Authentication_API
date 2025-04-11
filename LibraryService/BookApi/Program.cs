@@ -1,3 +1,4 @@
+using BusinessLogicLayer.Profiles;
 using BusinessLogicLayer.Services;
 using DataAccessLayer.Repositories;
 
@@ -23,6 +24,7 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddAutoMapper(typeof(BookProfile));
 
 var app = builder.Build();
 

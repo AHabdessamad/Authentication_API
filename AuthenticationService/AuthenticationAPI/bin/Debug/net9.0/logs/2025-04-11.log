@@ -267,3 +267,16 @@ WHERE [u].[Username] = @__username_0
 SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
 FROM [Users] AS [u]
 WHERE [u].[Username] = @__username_0 
+2025-04-11 20:55:19.6557 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-11 20:55:19.7467 INFO Hosting environment: Development 
+2025-04-11 20:55:19.7467 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-11 20:56:48.3809 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-11 20:56:48.5564 INFO Hosting environment: Development 
+2025-04-11 20:56:48.5564 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-11 21:02:47.4198 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-11 21:02:47.5284 INFO Hosting environment: Development 
+2025-04-11 21:02:47.5284 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-11 21:03:25.2702 INFO Executed DbCommand (156ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 

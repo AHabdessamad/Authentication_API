@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "AuthenticationUI",
   "resources": {
-    "hash": "sha256-cLQVKTreLorE3kE7STyHYV/AtAE2M0WjnIff0iq2Wgs=",
+    "hash": "sha256-3VZc0b67z1YZypzYupQIkgooYcIXw+VWeZW53A+ZTX8=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
       "System.Net.Http.Formatting.y32kbdw4yp.wasm": "System.Net.Http.Formatting.wasm",
@@ -216,8 +216,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "AuthenticationUI.06i0bjifqn.wasm": "AuthenticationUI.wasm",
-      "AuthenticationUI.hqni9kjx7r.pdb": "AuthenticationUI.pdb"
+      "AuthenticationUI.k1k4wk355k.wasm": "AuthenticationUI.wasm",
+      "AuthenticationUI.g0bkeaifx1.pdb": "AuthenticationUI.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.1p93gcv9fh.js": "sha256-1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ="
@@ -442,10 +442,10 @@
       "WindowsBase.ag32297siy.wasm": "sha256-BgyZxTgdU9rIYlNC9ZMiMjnvBAJSL0eQH8Y87o1M+q4=",
       "mscorlib.vt9pwshhot.wasm": "sha256-/aFxOaPc1iTNlJw0z4/RGEMD0nzl4qVE3SF4wMsLgp0=",
       "netstandard.or41gtprh3.wasm": "sha256-nD1KqAI5YYz+YohqHaZ5EmXi7Eq9Uy9sUknnI8sj1AM=",
-      "AuthenticationUI.06i0bjifqn.wasm": "sha256-CK0gHgc9uRjSwKf6Bf7HCmTmgCX7GRc0AwmS3uZjKbQ="
+      "AuthenticationUI.k1k4wk355k.wasm": "sha256-iGHKOwp9Uq2BqeFhnT4MDxa544MokOT/TjEFb4LFs4M="
     },
     "pdb": {
-      "AuthenticationUI.hqni9kjx7r.pdb": "sha256-V84fP3GUX93QwJCNpPmE0DP5NhyweVjZbnMWhHyfkzE="
+      "AuthenticationUI.g0bkeaifx1.pdb": "sha256-QHXWmBoJf6zQRR+KwZNi/apeuewZz1COarF3VN1dTbc="
     }
   },
   "cacheBootResources": true,

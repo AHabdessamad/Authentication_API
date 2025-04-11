@@ -1,28 +1,26 @@
-﻿using DataAccessLayer.Entities;
+﻿using AutoMapper;
+using DataAccessLayer.Entities;
 using DataAccessLayer.Repositories;
-using SharedDtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogicLayer.Services
 {
+    
     public class BookService : IBookService
     {
+        private readonly IMapper _mapper;
         private readonly IBookRepository _bookRepository;
 
-        public BookService(IBookRepository bookRepo)
+        public BookService(IBookRepository bookRepo, IMapper mapper)
         {
             _bookRepository = bookRepo;
+            _mapper = mapper;
         }
 
         public Book CreateBook(BookDto bookDto)
         {
             if (bookDto == null) return null;
-            return  _bookRepository.CreateBook(bookDto);
+            var bookMaped = _mapper.Map<Book>(bookDto);
+            return  _bookRepository.CreateBook(bookMaped);
 
         }
 
@@ -43,7 +41,8 @@ namespace BusinessLogicLayer.Services
 
         public Book UpdateBook(int id, BookDto bookDto)
         {
-            return _bookRepository.UpdateBook(id, bookDto);
+            var bookMaped = _mapper.Map<Book>(bookDto);
+            return _bookRepository.UpdateBook(id, bookMaped);
             
         }
 

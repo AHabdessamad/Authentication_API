@@ -54,9 +54,7 @@ C:\Users\aaithamou\source\repos\AuthenticationService\LibraryService\BusinessLog
 C:\Users\aaithamou\source\repos\AuthenticationService\LibraryService\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\LibraryService\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.pdb
 C:\Users\aaithamou\source\repos\AuthenticationService\LibraryService\BusinessLogicLayer\bin\Debug\net8.0\DataAccessLayer.dll
-C:\Users\aaithamou\source\repos\AuthenticationService\LibraryService\BusinessLogicLayer\bin\Debug\net8.0\SharedDtos.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\LibraryService\BusinessLogicLayer\bin\Debug\net8.0\DataAccessLayer.pdb
-C:\Users\aaithamou\source\repos\AuthenticationService\LibraryService\BusinessLogicLayer\bin\Debug\net8.0\SharedDtos.pdb
 C:\Users\aaithamou\source\repos\AuthenticationService\LibraryService\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.AssemblyReference.cache
 C:\Users\aaithamou\source\repos\AuthenticationService\LibraryService\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\aaithamou\source\repos\AuthenticationService\LibraryService\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfoInputs.cache

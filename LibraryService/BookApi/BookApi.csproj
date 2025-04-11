@@ -13,7 +13,6 @@
   <ItemGroup>
     <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj" />
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
-    <ProjectReference Include="..\SharedDtos\SharedDtos.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,4 @@
 ﻿using DataAccessLayer.Entities;
-using SharedDtos;
 using System.Linq.Expressions;
 
 namespace DataAccessLayer.Repositories
@@ -34,7 +33,7 @@ namespace DataAccessLayer.Repositories
             return books.Where(b => b.Id == id).FirstOrDefault();
         }
 
-        public Book CreateBook(BookDto book)
+        public Book CreateBook(Book book)
         {
             var createdBook = new Book
             {
@@ -50,16 +49,16 @@ namespace DataAccessLayer.Repositories
             return createdBook;
         }
 
-        public Book UpdateBook(int id, BookDto bookDto)
+        public Book UpdateBook(int id, Book book)
         {
             var foundBook = books.FirstOrDefault(b => b.Id == id);
             if (foundBook == null) return null;
 
-            foundBook.Title = bookDto.Title;
-            foundBook.Author = bookDto.Author;
-            foundBook.PublishDate = bookDto.PublishDate;
-            foundBook.ISBN = bookDto.ISBN;
-            foundBook.NbrOfCopy = bookDto.NbrOfCopy;
+            foundBook.Title = book.Title;
+            foundBook.Author = book.Author;
+            foundBook.PublishDate = book.PublishDate;
+            foundBook.ISBN = book.ISBN;
+            foundBook.NbrOfCopy = book.NbrOfCopy;
 
             return foundBook;
         }

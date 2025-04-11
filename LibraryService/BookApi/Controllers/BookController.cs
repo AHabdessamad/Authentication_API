@@ -1,8 +1,8 @@
-﻿using BusinessLogicLayer.Results;
+﻿using BusinessLogicLayer;
+using BusinessLogicLayer.Results;
 using BusinessLogicLayer.Services;
 using DataAccessLayer.Entities;
 using Microsoft.AspNetCore.Mvc;
-using SharedDtos;
 
 namespace BookApi.Controllers
 {
