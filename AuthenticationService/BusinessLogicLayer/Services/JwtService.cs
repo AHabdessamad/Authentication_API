@@ -42,7 +42,7 @@ namespace Service.Services
                 }),
 
                 Issuer = _config.GetSection("Issuer").Value,
-
+                Audience = _config["Audience"],
                 Expires = DateTime.UtcNow.AddHours(1),
 
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_key)), SecurityAlgorithms.HmacSha256Signature)

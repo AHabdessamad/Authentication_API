@@ -15,7 +15,6 @@ namespace AuthenticationUI.Services
         private readonly HttpClient _httpClient;
         private readonly ILocalStorageService _localStorageService;
         private NavigationManager _navigationManager;
-        private string accessToken = "";
         private readonly ClaimsPrincipal Unauthenticated =
             new ClaimsPrincipal(new ClaimsIdentity());
 
@@ -32,15 +31,6 @@ namespace AuthenticationUI.Services
             var jsonBytes = ParseBase64WithoutPadding(payload);
 
             var decodedPayload = System.Text.Encoding.UTF8.GetString(jsonBytes);
-            Console.WriteLine($"Decoded JWT Payload: {decodedPayload}");
-
-            //User = new User
-            //{
-            //    Id = Convert.ToInt32(decodedPayload.),
-            //    Username = user.FindFirst("name")?.Value,
-            //    Email = user.FindFirst("email")?.Value,
-            //    Role = user.FindFirst("role")?.Value
-            //};
 
             var keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
 
@@ -81,7 +71,6 @@ namespace AuthenticationUI.Services
             try
             {
                 var token = await _localStorageService.GetItemAsync<string>("accessToken");
-                accessToken = token;
 
                 if (string.IsNullOrEmpty(token))
                 {
@@ -137,7 +126,6 @@ namespace AuthenticationUI.Services
                         // Store the token in local storage
                         await _localStorageService.SetItemAsync("accessToken", token);
 
-                        //await _localStorageService.SetItemAsync("role", token);
                         // Notify the authentication state has changed
                         NotifyAuthenticationStateChanged(GetAuthenticationStateAsync());
 
@@ -185,24 +173,40 @@ namespace AuthenticationUI.Services
             _navigationManager.NavigateTo("/login", forceLoad: true);
         }
 
-        public async Task<FormResult> GetAllUserAsync(RegisterDTO registerDTO)
+        public async Task<List<User>> GetAllUserAsync()
         {
+                // Get role from JWT token
+                var token = await _localStorageService.GetItemAsync<string>("accessToken");
 
-            try
-            {
-                var res = await _httpClient.GetAsync("api/Auth/user");
-
-                if (res.IsSuccessStatusCode)
+                if (!string.IsNullOrEmpty(token))
                 {
-                    return new FormResult(true, "Users Featched Successfully");
+                    // add token to headers
+                    _httpClient.DefaultRequestHeaders.Authorization =
+                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
                 }
-            }
-            catch (Exception ex)
-            {
-                return new FormResult(false, ex.Message);
-            }
+                else
+                {
+                    return null;
 
-            return new FormResult(false, "Fetach users failed");
+                }
+
+                    var claims = ParseClaimsFromJwt(token);
+                var userRole = claims.FirstOrDefault( c => c.Type == ClaimTypes.Role)?.Value;
+
+                if (userRole != "Admin")
+                {
+                    return null;
+                }
+
+                //proceed with the API call
+                return  await _httpClient.GetFromJsonAsync<List<User>>("api/Auth/user");
+        
         }
+
+        public async Task<bool> DeleteUser(int id)
+        {
+            return await _httpClient.DeleteFromJsonAsync<bool>($"api/Auth/user/{id}");
+        }
+
     }
 }

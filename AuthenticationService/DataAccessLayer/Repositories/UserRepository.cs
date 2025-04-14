@@ -17,15 +17,17 @@ namespace DAL.Repositories
         {
             _context = context;
         }
+
         public async Task<User> GetUserByUsernameAsync(string username)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
             return user;
         }
+
         public async Task<User> RegisterUserAsync(User user)
         {
             await _context.Users.AddAsync(user);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(); // Fix: Use SaveChangesAsync instead of SaveChanges
             return user;
         }
 
@@ -37,6 +39,15 @@ namespace DAL.Repositories
         public async Task<IEnumerable<User>> SearchByUsername(string username)
         {
             return await _context.Users.Where(u => u.Username.Contains(username)).ToListAsync();
+        }
+
+        public async Task<bool> DeleteUser(int id)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
+            if (user == null) return false;
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync(); 
+            return true;
         }
     }
     

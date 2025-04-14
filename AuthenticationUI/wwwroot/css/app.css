@@ -139,3 +139,20 @@ body {
         border-bottom-left-radius: 0.5rem;
     }
 }
+
+
+@media (prefers-color-scheme: dark) {
+    .custom-bg {
+        background: linear-gradient(to right, #1f2937, #111827);
+        color: white !important;
+    }
+
+    .custom-btn {
+        background-color: #374151 !important;
+        color: white !important;
+    }
+
+        .custom-btn:hover {
+            background-color: #4b5563 !important;
+        }
+}

@@ -1,5 +1,6 @@
 ﻿using AuthenticationAPI.Models;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Service.Dtos;
 using Service.Services.Interfaces;
@@ -70,6 +71,7 @@ namespace WebAPI.Controllers
 
 
         [HttpGet("user")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllUsers()
         {
             var _user = await _userService.GetAllUserAsync();
@@ -77,10 +79,11 @@ namespace WebAPI.Controllers
             if (_user == null)
                 return BadRequest("User not exist");
 
-            return Ok(new { _user });
+            return Ok( _user );
         }
 
         [HttpGet("user/search")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> SerachByUsername(string username)
         {
             var _user = await _userService.SearchByUsername(username);
@@ -89,6 +92,19 @@ namespace WebAPI.Controllers
                 return BadRequest("User not exist");
 
             return Ok(new { _user });
+        }
+
+        [HttpDelete("user/{id}")]
+        [Authorize(Roles = "Admin")]
+        public async Task<bool> DeleteUser(int id)
+        {
+            var res = await _userService.DeleteUser(id);
+            if (!res)
+            {
+                return false;
+            }
+
+            return true;
         }
 
 

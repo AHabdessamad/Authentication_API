@@ -8,10 +8,13 @@ namespace AuthenticationUI.Results
         public bool IsSuccess { get; set; }
         public string Message { get; set; }
 
-        public FormResult(bool success, string message)
+        public object Data { get; set; }
+
+        public FormResult(bool success, string message, object data = null)
         {
             IsSuccess = success;
             Message = message;
+            Data = data;
         }
     }
 }

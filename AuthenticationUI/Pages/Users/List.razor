@@ -1,0 +1,75 @@
+﻿@page "/user"
+@using AuthenticationUI.Models
+@inject CustomAuthService customAuthService
+@inject NavigationManager navigationManager
+
+<h1>Users</h1>
+<br />
+
+
+@if (users == null)
+{
+    <p> Loading...</p>
+}
+else
+{
+    <table class= "table table-striped table-bordered table-hover">
+        <thead class= "bg-primary text-white">
+            <tr>
+                <th style = "width:10%" > Id </th>
+                <th style = "width:10%" > Username </th>
+                <th style = "width:25%" > Email </th>
+                <th style = "width:15%" > Role</th>
+                <th style = "width:20%" > Actions </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td> @user.Id </td>
+                    <td> @user.Username </td>
+                    <td> @user.Email </td>
+                    <td> @(@user.Role == 0 ? "Admin" : "User")</td>
+                    <td class="align-content-center">
+                        <a href = "/book/details/@user.Id" class= "btn btn-info btn-sm" >
+                            <span class= "oi oi-info" > View </span >
+                        </a>
+                        <AuthorizeView Roles="Admin">
+                            <Authorized>
+                                <button @onclick="@(() => DeleteUser(user.Id))" class="btn btn-danger btn-sm">
+                                    <span class="oi oi-trash">Delete</span>
+                                </button>
+                            </Authorized>
+                        </AuthorizeView>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code{
+    private List<User> users;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var res = await customAuthService.GetAllUserAsync();
+        if (res != null)
+        {
+            users = res;
+        }
+        else
+        {
+            navigationManager.NavigateTo("/error");
+        }
+
+    }
+
+    private async Task DeleteUser(int id)
+    {
+        await customAuthService.DeleteUser(id);
+        users = await customAuthService.GetAllUserAsync(); ;
+    }
+
+}

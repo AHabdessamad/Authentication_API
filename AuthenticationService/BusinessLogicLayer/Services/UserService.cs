@@ -6,6 +6,7 @@ using Service.Dtos;
 using Service.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using AuthenticationAPI.Models;
+using System.Threading.Tasks;
 
 namespace Service.Services
 {
@@ -62,6 +63,11 @@ namespace Service.Services
             var users = await _userRepository.SearchByUsername(username);
             var _users = _mapper.Map<IEnumerable<UserDto>>(users);
             return _users;
+        }
+
+        public async Task<bool> DeleteUser(int id)
+        {
+            return await _userRepository.DeleteUser(id);
         }
     }
 }

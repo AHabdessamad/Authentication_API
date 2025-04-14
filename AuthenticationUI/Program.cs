@@ -30,6 +30,6 @@ builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddAuthorizationCore();
 
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthService>();
-
+builder.Services.AddScoped<CustomAuthService>();
 builder.Services.AddScoped<LibraryService>();
 await builder.Build().RunAsync();

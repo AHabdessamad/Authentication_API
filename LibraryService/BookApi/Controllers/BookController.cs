@@ -2,6 +2,7 @@
 using BusinessLogicLayer.Results;
 using BusinessLogicLayer.Services;
 using DataAccessLayer.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookApi.Controllers
@@ -86,6 +87,7 @@ namespace BookApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public ActionResult<Response<Book>> CreateBook([FromBody] BookDto bookDto)
         {
             try
@@ -112,6 +114,7 @@ namespace BookApi.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult UpdateBook(int id, [FromBody] BookDto bookDto)
         {
             try
@@ -138,6 +141,7 @@ namespace BookApi.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public bool DeleteBook(int id)
         {
                 var deletionResult = _bookService.DeleteBook(id);

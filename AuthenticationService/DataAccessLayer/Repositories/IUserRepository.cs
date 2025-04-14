@@ -14,5 +14,6 @@ namespace DAL.Repositories
 
         Task<IEnumerable<User>> GetAllUserAsync();
         Task<IEnumerable<User>> SearchByUsername(string username);
+        Task<bool> DeleteUser(int id);
     }
 }

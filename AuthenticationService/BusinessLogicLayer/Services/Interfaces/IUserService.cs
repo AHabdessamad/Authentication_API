@@ -17,5 +17,6 @@ namespace Service.Services.Interfaces
 
         public Task<IEnumerable<UserDto>> GetAllUserAsync();
         public Task<IEnumerable<UserDto>> SearchByUsername(string username);
+        public Task<bool> DeleteUser(int id);
     }
 }
