@@ -16,39 +16,39 @@ namespace BusinessLogicLayer.Services
             _mapper = mapper;
         }
 
-        public Book CreateBook(BookDto bookDto)
+        public async Task<Book> CreateBook(BookDto bookDto)
         {
             if (bookDto == null) return null;
             var bookMaped = _mapper.Map<Book>(bookDto);
-            return  _bookRepository.CreateBook(bookMaped);
+            return  await _bookRepository.CreateBook(bookMaped);
 
         }
 
-        public bool DeleteBook(int id)
+        public async Task<bool> DeleteBook(int id)
         {
-            return _bookRepository.DeleteBook(id);
+            return await _bookRepository.DeleteBook(id);
         }
 
-        public IEnumerable<Book> GetAllBooks()
+        public async Task<IEnumerable<Book>> GetAllBooks()
         {
-            return _bookRepository.GetAllBooks();
+            return await _bookRepository.GetAllBooks();
         }
 
-        public Book GetBookById(int id)
+        public async Task<Book> GetBookById(int id)
         {
-            return _bookRepository.GetBookById(id);
+            return await _bookRepository.GetBookById(id);
         }
 
-        public Book UpdateBook(int id, BookDto bookDto)
+        public async Task<Book> UpdateBook(int id, BookDto bookDto)
         {
             var bookMaped = _mapper.Map<Book>(bookDto);
-            return _bookRepository.UpdateBook(id, bookMaped);
+            return await _bookRepository.UpdateBook(id, bookMaped);
             
         }
 
-        public IEnumerable<Book> SearchByTitle(string title)
+        public async Task<IEnumerable<Book>> SearchByTitle(string title)
         {
-            return _bookRepository.SearchByTitle(title);
+            return await _bookRepository.SearchByTitle(title);
         }
     }
 

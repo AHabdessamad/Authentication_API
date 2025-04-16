@@ -32,9 +32,9 @@ else
                     <td> @user.Email </td>
                     <td> @(@user.Role == 0 ? "Admin" : "User")</td>
                     <td class="align-content-center">
-                        <a href = "/book/details/@user.Id" class= "btn btn-info btn-sm" >
-                            <span class= "oi oi-info" > View </span >
-                        </a>
+                        <a href = "/book/details/@user.Id" class= "btn btn-info btn-sm" > 
+                            <span class= "oi oi-info" > View </span > 
+                        </a> 
                         <AuthorizeView Roles="Admin">
                             <Authorized>
                                 <button @onclick="@(() => DeleteUser(user.Id))" class="btn btn-danger btn-sm">

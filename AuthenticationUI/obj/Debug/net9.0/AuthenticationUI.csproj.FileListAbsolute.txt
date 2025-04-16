@@ -1151,10 +1151,10 @@ C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\AuthenticationUI.pdb
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\ref\AuthenticationUI.dll
 C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\xaxiftvd2u-dginh1hm31.gz
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.3okeacm5n9.pdb
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.mc41em6elb.wasm
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.3okeacm5n9.pdb.gz
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.mc41em6elb.wasm.gz
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\9jjxairkrh-mc41em6elb.gz
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\8erg1bf7te-3okeacm5n9.gz
-C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\244s2raz4l-etpk5a3854.gz
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.5z2z7qppz7.pdb
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.amqoz7ybgd.wasm
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.5z2z7qppz7.pdb.gz
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\bin\Debug\net9.0\wwwroot\_framework\AuthenticationUI.amqoz7ybgd.wasm.gz
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\9jjxairkrh-amqoz7ybgd.gz
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\8erg1bf7te-5z2z7qppz7.gz
+C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationUI\obj\Debug\net9.0\compressed\244s2raz4l-ooxcs8o6r7.gz

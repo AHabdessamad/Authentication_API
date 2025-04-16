@@ -21,6 +21,6 @@ namespace BusinessLogicLayer
                 services.AddDalServices(configuration);
                 return services;
             }
-        
+
     }
 }

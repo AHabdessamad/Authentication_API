@@ -43,6 +43,8 @@ builder.Services.AddSingleton<ILoggerProvider, NLogLoggerProvider>();
 
 
 builder.Services.AddEndpointsApiExplorer();
+
+
 builder.Services.AddSwaggerGen(c =>
 {
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -73,20 +75,18 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddAutoMapper(typeof(UserProfile));
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Issuer"],
-            ValidAudience = builder.Configuration["Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtKey"]))
-        };
-    });
+builder.Services.AddAuthentication(options => { options.DefaultAuthenticateScheme = 
+    JwtBearerDefaults.AuthenticationScheme; 
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme; })
+    .AddJwtBearer(options => {
+        options.RequireHttpsMetadata = false; options.SaveToken = true; 
+        options.TokenValidationParameters = new TokenValidationParameters { 
+            ValidateIssuerSigningKey = true, 
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration["JwtKey"])), 
+            ValidateAudience = false, 
+            ValidateIssuer = false }; 
+});
+
 
 builder.Services.AddAuthorization();
 
@@ -105,7 +105,6 @@ app.UseCors("AllowAll");
 
 app.UseHttpsRedirection();
 
-app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

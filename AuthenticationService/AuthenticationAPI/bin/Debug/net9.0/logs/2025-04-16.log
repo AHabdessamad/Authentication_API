@@ -1,0 +1,321 @@
+2025-04-16 09:57:22.0222 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 09:57:22.0995 INFO Hosting environment: Development 
+2025-04-16 09:57:22.0995 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 09:59:11.4432 INFO Executed DbCommand (176ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 10:06:02.2850 INFO Executed DbCommand (8ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 10:06:08.9751 INFO Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 10:06:23.5466 INFO Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 10:14:59.3303 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 10:14:59.3942 INFO Hosting environment: Development 
+2025-04-16 10:14:59.3942 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 10:18:37.0984 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 10:18:37.1385 INFO Hosting environment: Development 
+2025-04-16 10:18:37.1385 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 10:24:55.9737 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 10:24:56.0322 INFO Hosting environment: Development 
+2025-04-16 10:24:56.0322 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 10:50:08.6451 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 10:50:08.7091 INFO Hosting environment: Development 
+2025-04-16 10:50:08.7091 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 10:53:43.9129 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 10:53:43.9698 INFO Hosting environment: Development 
+2025-04-16 10:53:43.9698 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 11:09:39.2212 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 11:09:39.2546 INFO Hosting environment: Development 
+2025-04-16 11:09:39.2546 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 11:18:59.4920 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 11:18:59.5507 INFO Hosting environment: Development 
+2025-04-16 11:18:59.5507 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 11:20:08.1141 INFO Executed DbCommand (47ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 11:20:52.7308 INFO Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:22:28.7662 INFO Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:26:48.2904 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 11:26:48.3359 INFO Hosting environment: Development 
+2025-04-16 11:26:48.3359 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 11:27:20.3595 INFO Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:27:44.6056 INFO Executed DbCommand (32ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0 
+2025-04-16 11:27:44.7009 INFO Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Users]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-04-16 11:27:50.6983 INFO Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:37:23.1115 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 11:37:23.1908 INFO Hosting environment: Development 
+2025-04-16 11:37:23.1908 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 11:37:40.7252 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 11:37:40.7849 INFO Hosting environment: Development 
+2025-04-16 11:37:40.7849 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 11:38:23.7651 INFO Executed DbCommand (55ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 11:38:23.7880 INFO Registering to the application... 
+2025-04-16 11:38:24.0249 INFO Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [PasswordHash], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3); 
+2025-04-16 11:38:35.2032 INFO Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 11:38:50.8489 INFO Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 11:38:59.6036 INFO Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:39:40.7915 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:40:32.0965 INFO Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0 
+2025-04-16 11:40:32.1164 INFO Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Users]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-04-16 11:40:32.1371 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:41:01.4030 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:41:36.3721 INFO Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0 
+2025-04-16 11:41:36.3721 INFO Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Users]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-04-16 11:41:36.3941 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:41:41.0360 INFO Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0 
+2025-04-16 11:41:41.0360 INFO Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Users]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-04-16 11:41:41.0499 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:41:42.8918 INFO Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0 
+2025-04-16 11:41:42.8918 INFO Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Users]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-04-16 11:41:42.9135 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:41:48.0291 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:41:51.3437 INFO Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0 
+2025-04-16 11:41:51.3437 INFO Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Users]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-04-16 11:41:51.3637 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:41:58.3640 INFO Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:42:53.3362 INFO Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:44:19.9559 INFO Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 11:46:37.2095 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 11:46:37.2561 INFO Hosting environment: Development 
+2025-04-16 11:46:37.2561 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 11:47:49.0476 INFO Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 12:14:17.5183 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 12:14:17.5756 INFO Hosting environment: Development 
+2025-04-16 12:14:17.5756 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 12:17:46.8314 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 12:17:46.8859 INFO Hosting environment: Development 
+2025-04-16 12:17:46.8859 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 12:20:23.4964 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 12:20:23.5486 INFO Hosting environment: Development 
+2025-04-16 12:20:23.5486 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 12:25:25.0826 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 12:25:25.1433 INFO Hosting environment: Development 
+2025-04-16 12:25:25.1952 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 15:11:11.2453 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 15:11:11.3459 INFO Hosting environment: Development 
+2025-04-16 15:11:11.3639 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 15:17:05.8213 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 15:17:05.9213 INFO Hosting environment: Development 
+2025-04-16 15:17:05.9213 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 15:18:49.7844 INFO Executed DbCommand (256ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 15:19:22.2016 INFO Executed DbCommand (14ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 15:31:54.5098 INFO Now listening on: https://localhost:7176 
+2025-04-16 15:31:54.8439 INFO Now listening on: http://localhost:5141 
+2025-04-16 15:31:55.0209 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 15:31:55.0209 INFO Hosting environment: Development 
+2025-04-16 15:31:55.0209 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 15:33:00.5191 INFO Executed DbCommand (117ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 15:37:30.8015 INFO Now listening on: https://localhost:7176 
+2025-04-16 15:37:30.8682 INFO Now listening on: http://localhost:5141 
+2025-04-16 15:37:30.9775 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 15:37:30.9775 INFO Hosting environment: Development 
+2025-04-16 15:37:30.9775 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 15:38:30.1853 INFO Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 15:38:36.7756 INFO Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 15:38:41.5517 INFO Executed DbCommand (27ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0 
+2025-04-16 15:38:41.6236 INFO Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Users]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-04-16 15:38:41.6634 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 15:39:12.8994 INFO Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 15:39:12.8994 INFO Registering to the application... 
+2025-04-16 15:39:13.0625 INFO Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [PasswordHash], [Role], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3); 
+2025-04-16 15:39:31.1755 INFO Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 15:39:55.1438 INFO Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 15:39:58.1295 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 15:40:46.6210 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 15:43:56.7521 INFO Now listening on: https://localhost:7176 
+2025-04-16 15:43:56.8000 INFO Now listening on: http://localhost:5141 
+2025-04-16 15:43:56.8963 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 15:43:56.8963 INFO Hosting environment: Development 
+2025-04-16 15:43:56.8963 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 15:44:18.4582 INFO Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 15:44:33.6861 INFO Executed DbCommand (25ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 15:46:34.0802 INFO Now listening on: https://localhost:7176 
+2025-04-16 15:46:34.1427 INFO Now listening on: http://localhost:5141 
+2025-04-16 15:46:34.2506 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 15:46:34.2506 INFO Hosting environment: Development 
+2025-04-16 15:46:34.2506 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 15:49:29.0135 INFO Now listening on: https://localhost:7176 
+2025-04-16 15:49:29.0766 INFO Now listening on: http://localhost:5141 
+2025-04-16 15:49:29.1680 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 15:49:29.1680 INFO Hosting environment: Development 
+2025-04-16 15:49:29.1680 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 15:49:59.5600 INFO Executed DbCommand (63ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 15:50:11.9840 INFO Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 15:59:18.5927 INFO Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u] 
+2025-04-16 16:30:20.5545 INFO Now listening on: https://localhost:7176 
+2025-04-16 16:30:20.6179 INFO Now listening on: http://localhost:5141 
+2025-04-16 16:30:20.7099 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 16:30:20.7099 INFO Hosting environment: Development 
+2025-04-16 16:30:20.7099 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 16:31:29.8665 INFO Executed DbCommand (56ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[PasswordHash], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0 
+2025-04-16 16:33:56.0070 INFO Now listening on: https://localhost:7176 
+2025-04-16 16:33:56.0521 INFO Now listening on: http://localhost:5141 
+2025-04-16 16:33:56.1423 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 16:33:56.1423 INFO Hosting environment: Development 
+2025-04-16 16:33:56.1423 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 
+2025-04-16 16:36:31.5472 INFO Now listening on: https://localhost:7176 
+2025-04-16 16:36:31.6373 INFO Now listening on: http://localhost:5141 
+2025-04-16 16:36:31.8233 INFO Application started. Press Ctrl+C to shut down. 
+2025-04-16 16:36:31.8233 INFO Hosting environment: Development 
+2025-04-16 16:36:31.8233 INFO Content root path: C:\Users\aaithamou\source\repos\AuthenticationService\AuthenticationService\AuthenticationAPI 

@@ -19,11 +19,11 @@ namespace BookApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllBooks()
+        public async Task<IActionResult> GetAllBooks()
         {
             try
             {
-                var books = _bookService.GetAllBooks();
+                var books = await _bookService.GetAllBooks();
 
                 if (books == null || !books.Any())
                 {
@@ -39,12 +39,12 @@ namespace BookApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetBookById(int id)
+        public async Task<IActionResult> GetBookById(int id)
         {
             try
             {
 
-                var book = _bookService.GetBookById(id);
+                var book = await _bookService.GetBookById(id);
 
                 if (book == null)
                 {
@@ -60,7 +60,7 @@ namespace BookApi.Controllers
         }
 
         [HttpGet("search")]
-        public IActionResult SearchByTitle(string title)
+        public async Task<IActionResult> SearchByTitle(string title)
         {
             try
             {
@@ -69,7 +69,7 @@ namespace BookApi.Controllers
                     return BadRequest("Invalid Title");
                 }
 
-                var MatchedBook = _bookService.SearchByTitle(title);
+                var MatchedBook = await _bookService.SearchByTitle(title);
 
                 if (MatchedBook == null)
                 {
@@ -88,7 +88,7 @@ namespace BookApi.Controllers
 
         [HttpPost]
         [Authorize(Roles = "Admin")]
-        public ActionResult<Response<Book>> CreateBook([FromBody] BookDto bookDto)
+        public async Task<ActionResult<Response<Book>>> CreateBook([FromBody] BookDto bookDto)
         {
             try
             {
@@ -97,7 +97,7 @@ namespace BookApi.Controllers
                     return Response<Book>.Failure(400, "Invalid book data");
                 }
 
-                var createdBook = _bookService.CreateBook(bookDto);
+                var createdBook = await _bookService.CreateBook(bookDto);
 
                 if (createdBook == null)
                 {
@@ -115,7 +115,7 @@ namespace BookApi.Controllers
 
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin")]
-        public IActionResult UpdateBook(int id, [FromBody] BookDto bookDto)
+        public async Task<IActionResult> UpdateBook(int id, [FromBody] BookDto bookDto)
         {
             try
             {
@@ -124,7 +124,7 @@ namespace BookApi.Controllers
                     return BadRequest("Invalid book data");
                 }
 
-                var updatedBook = _bookService.UpdateBook(id, bookDto);
+                var updatedBook = await _bookService.UpdateBook(id, bookDto);
 
                 if (updatedBook == null)
                 {
@@ -142,9 +142,9 @@ namespace BookApi.Controllers
 
         [HttpDelete("{id}")]
         [Authorize(Roles = "Admin")]
-        public bool DeleteBook(int id)
+        public async Task<bool> DeleteBook(int id)
         {
-                var deletionResult = _bookService.DeleteBook(id);
+                var deletionResult = await _bookService.DeleteBook(id);
 
                 if (!deletionResult)
                 {

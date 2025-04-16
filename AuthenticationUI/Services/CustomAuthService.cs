@@ -178,16 +178,9 @@ namespace AuthenticationUI.Services
                 // Get role from JWT token
                 var token = await _localStorageService.GetItemAsync<string>("accessToken");
 
-                if (!string.IsNullOrEmpty(token))
-                {
-                    // add token to headers
-                    _httpClient.DefaultRequestHeaders.Authorization =
-                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-                }
-                else
+                if (string.IsNullOrEmpty(token))
                 {
                     return null;
-
                 }
 
                     var claims = ParseClaimsFromJwt(token);
@@ -199,13 +192,13 @@ namespace AuthenticationUI.Services
                 }
 
                 //proceed with the API call
-                return  await _httpClient.GetFromJsonAsync<List<User>>("api/Auth/user");
+                return  await _httpClient.GetFromJsonAsync<List<User>>("api/auth/user");
         
         }
 
         public async Task<bool> DeleteUser(int id)
         {
-            return await _httpClient.DeleteFromJsonAsync<bool>($"api/Auth/user/{id}");
+            return await _httpClient.DeleteFromJsonAsync<bool>($"api/auth/user/{id}");
         }
 
     }

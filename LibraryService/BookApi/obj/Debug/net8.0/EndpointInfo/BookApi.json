@@ -203,6 +203,14 @@
             "type": "number",
             "format": "double"
           },
+          "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageLocalPath": {
+            "type": "string",
+            "nullable": true
+          },
           "publishDate": {
             "type": "string",
             "format": "date-time"
@@ -238,6 +246,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Please insert token",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

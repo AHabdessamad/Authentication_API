@@ -27,7 +27,7 @@ namespace DAL.Repositories
         public async Task<User> RegisterUserAsync(User user)
         {
             await _context.Users.AddAsync(user);
-            await _context.SaveChangesAsync(); // Fix: Use SaveChangesAsync instead of SaveChanges
+            await _context.SaveChangesAsync(); 
             return user;
         }
 

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
 
 namespace BusinessLogicLayer
 {
@@ -11,6 +12,8 @@ namespace BusinessLogicLayer
         string Author,
         [Required]
         double Price,
+        string? ImageUrl,
+        string? ImageLocalPath,
         [Required]
         DateTime PublishDate,
         [MaxLength(255)]

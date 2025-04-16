@@ -1,12 +1,20 @@
 {
   "Version": 1,
-  "Hash": "SFVnIx/QyQZEhrNBSm5uthCza/p6mId7+czidpYh+bk=",
+  "Hash": "FtAn6q7AJWIGP0O/iiioercg85SwEyb0rZYZMaPfnSU=",
   "Source": "BookApi",
   "BasePath": "_content/BookApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BookApi\\wwwroot",
+      "Source": "BookApi",
+      "ContentRoot": "C:\\Users\\aaithamou\\source\\repos\\AuthenticationService\\LibraryService\\BookApi\\wwwroot\\",
+      "BasePath": "_content/BookApi",
+      "Pattern": "**"
+    }
+  ],
   "Assets": [],
   "Endpoints": []
 }

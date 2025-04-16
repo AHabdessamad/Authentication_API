@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "Authe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "AuthenticationService\DataAccessLayer\DataAccessLayer.csproj", "{5FD9C249-4939-133A-7762-6C69FA71837A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{4BBD31D9-D3BF-42DA-A1F4-146781188C9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "Gateway\ApiGateway\ApiGateway.csproj", "{361E059B-0C1D-492A-984C-19B1D55569E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,10 @@ Global
 		{5FD9C249-4939-133A-7762-6C69FA71837A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FD9C249-4939-133A-7762-6C69FA71837A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FD9C249-4939-133A-7762-6C69FA71837A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{361E059B-0C1D-492A-984C-19B1D55569E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{361E059B-0C1D-492A-984C-19B1D55569E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{361E059B-0C1D-492A-984C-19B1D55569E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{361E059B-0C1D-492A-984C-19B1D55569E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +74,7 @@ Global
 		{000D9B9E-1E77-DA52-9938-B3CD94C101A5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{A012ACCA-F394-18DA-3482-0FB9A8048F15} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{5FD9C249-4939-133A-7762-6C69FA71837A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{361E059B-0C1D-492A-984C-19B1D55569E9} = {4BBD31D9-D3BF-42DA-A1F4-146781188C9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E029EAB4-9B2E-405F-B4D5-EF62B43C757F}

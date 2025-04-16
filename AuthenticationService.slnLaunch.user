@@ -13,6 +13,11 @@
       {
         "Path": "AuthenticationService\\AuthenticationAPI\\AuthenticationAPI.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "Gateway\\ApiGateway\\ApiGateway.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
       }
     ]
   }
